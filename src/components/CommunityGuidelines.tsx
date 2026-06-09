@@ -32,19 +32,19 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
     languageName: "English",
     title: "Community Guidelines",
     subtitle:
-      "These rules explain who can use FRÅNDS, what content is allowed, and what is forbidden.",
+      "These rules explain who can use Frapic, what content is allowed, and what is forbidden.",
     lastUpdated: "Last updated: March 10, 2026",
     languageLabel: "Language",
     sections: [
       {
         title: "1. Purpose",
         paragraphs: [
-          "FRÅNDS is a private social media app for sharing photos and videos with friends only.",
+          "Frapic is a private social media app for sharing photos and videos with friends only.",
           "It is designed to help people create and keep personal memories together in a trusted, private space.",
         ],
       },
       {
-        title: "2. Who Can Use FRÅNDS",
+        title: "2. Who Can Use Frapic",
         groups: [
           {
             title: "Allowed",
@@ -153,7 +153,7 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
         title: "11. Updates",
         bullets: [
           "These guidelines may change over time.",
-          "Continued use of FRÅNDS means acceptance of the latest published version.",
+          "Continued use of Frapic means acceptance of the latest published version.",
         ],
       },
     ],
@@ -162,19 +162,19 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
     languageName: "Deutsch",
     title: "Community-Richtlinien",
     subtitle:
-      "Diese Regeln erklaren, wer FRÅNDS nutzen darf, welche Inhalte erlaubt sind und was verboten ist.",
+      "Diese Regeln erklaren, wer Frapic nutzen darf, welche Inhalte erlaubt sind und was verboten ist.",
     lastUpdated: "Zuletzt aktualisiert: 10. Marz 2026",
     languageLabel: "Sprache",
     sections: [
       {
         title: "1. Zweck",
         paragraphs: [
-          "FRÅNDS ist eine private Social-Media-App zum Teilen von Fotos und Videos nur mit Freunden.",
+          "Frapic ist eine private Social-Media-App zum Teilen von Fotos und Videos nur mit Freunden.",
           "Die App ist dafur gemacht, gemeinsam personliche Erinnerungen in einem vertrauensvollen, privaten Raum zu erstellen und zu bewahren.",
         ],
       },
       {
-        title: "2. Wer FRÅNDS nutzen darf",
+        title: "2. Wer Frapic nutzen darf",
         groups: [
           {
             title: "Erlaubt",
@@ -285,7 +285,7 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
         title: "11. Aktualisierungen",
         bullets: [
           "Diese Richtlinien konnen sich im Laufe der Zeit andern.",
-          "Die weitere Nutzung von FRÅNDS bedeutet die Akzeptanz der neuesten veroffentlichten Version.",
+          "Die weitere Nutzung von Frapic bedeutet die Akzeptanz der neuesten veroffentlichten Version.",
         ],
       },
     ],
@@ -294,19 +294,19 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
     languageName: "Español",
     title: "Normas de la Comunidad",
     subtitle:
-      "Estas reglas explican quien puede usar FRÅNDS, que contenido esta permitido y que esta prohibido.",
+      "Estas reglas explican quien puede usar Frapic, que contenido esta permitido y que esta prohibido.",
     lastUpdated: "Última actualización: 10 de marzo de 2026",
     languageLabel: "Idioma",
     sections: [
       {
         title: "1. Proposito",
         paragraphs: [
-          "FRÅNDS es una app de red social privada para compartir fotos y videos solo con amigos.",
+          "Frapic es una app de red social privada para compartir fotos y videos solo con amigos.",
           "Esta disenada para ayudar a crear y guardar recuerdos personales juntos en un espacio privado y de confianza.",
         ],
       },
       {
-        title: "2. Quien puede usar FRÅNDS",
+        title: "2. Quien puede usar Frapic",
         groups: [
           {
             title: "Permitido",
@@ -415,7 +415,7 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
         title: "11. Actualizaciones",
         bullets: [
           "Estas normas pueden cambiar con el tiempo.",
-          "El uso continuado de FRÅNDS significa aceptacion de la version publicada mas reciente.",
+          "El uso continuado de Frapic significa aceptacion de la version publicada mas reciente.",
         ],
       },
     ],
@@ -424,19 +424,19 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
     languageName: "Français",
     title: "Regles de la Communaute",
     subtitle:
-      "Ces regles expliquent qui peut utiliser FRÅNDS, quel contenu est autorise et ce qui est interdit.",
+      "Ces regles expliquent qui peut utiliser Frapic, quel contenu est autorise et ce qui est interdit.",
     lastUpdated: "Derniere mise a jour : 10 mars 2026",
     languageLabel: "Langue",
     sections: [
       {
         title: "1. Objet",
         paragraphs: [
-          "FRÅNDS est une application de reseau social privee pour partager des photos et des videos uniquement avec des amis.",
+          "Frapic est une application de reseau social privee pour partager des photos et des videos uniquement avec des amis.",
           "Elle est concue pour creer et conserver ensemble des souvenirs personnels dans un espace de confiance et prive.",
         ],
       },
       {
-        title: "2. Qui peut utiliser FRÅNDS",
+        title: "2. Qui peut utiliser Frapic",
         groups: [
           {
             title: "Autorise",
@@ -545,7 +545,7 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
         title: "11. Mises a jour",
         bullets: [
           "Ces regles peuvent evoluer avec le temps.",
-          "L'utilisation continue de FRÅNDS signifie l'acceptation de la version publiee la plus recente.",
+          "L'utilisation continue de Frapic signifie l'acceptation de la version publiee la plus recente.",
         ],
       },
     ],

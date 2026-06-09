@@ -3,10 +3,10 @@ import React from 'react';
 
 const privacyPolicyText = `Last updated March 23, 2026
 
-This Privacy Notice for FRÅNDS ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+This Privacy Notice for Frapic ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
-- Download and use our mobile application (FRÅNDS), or any other application of ours that links to this Privacy Notice
-- Use FRÅNDS. A social media app designed for absolute privacy and anti-doom-scrolling. It goes beyond the standard way of posting and creates journals for unique experiences.
+- Download and use our mobile application (Frapic), or any other application of ours that links to this Privacy Notice
+- Use Frapic. A social media app designed for absolute privacy and anti-doom-scrolling. It goes beyond the standard way of posting and creates journals for unique experiences.
 - Engage with us in other related ways, including any marketing or events
 
 Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at benedict.kunzmann@icloud.com.
@@ -75,7 +75,7 @@ Application Data. If you use our application(s), we also may collect the followi
 
 This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.
 
-Fraud prevention provider details: Fingerprint Pro acts as our service provider/data processor for device intelligence processing. We remain the data controller for how this data is used in FRÅNDS.
+Fraud prevention provider details: Fingerprint Pro acts as our service provider/data processor for device intelligence processing. We remain the data controller for how this data is used in Frapic.
 
 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
 
@@ -228,7 +228,7 @@ We may update this Privacy Notice from time to time. The updated version will be
 
 If you have questions or comments about this notice, you may email us at benedict.kunzmann@icloud.com or contact us by post at:
 
-FRÅNDS App Inc.
+Frapic App Inc.
 
 Leipzig, Leipzig 04105
 Germany
