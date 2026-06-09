@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { Anton, Open_Sans } from "next/font/google";
+import { useLanguage } from "../../context/LanguageContext";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 const openSans = Open_Sans({ weight: ["500"], subsets: ["latin"] });
@@ -12,6 +13,7 @@ const openSans = Open_Sans({ weight: ["500"], subsets: ["latin"] });
 gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutPage() {
+    const { t } = useLanguage();
     const containerRef = useRef<HTMLDivElement>(null);
     const lenisRef = useRef<Lenis | null>(null);
 
@@ -82,16 +84,16 @@ export default function AboutPage() {
     }, []);
 
     return (
-        <main ref={containerRef} className="min-h-screen bg-[#0b1015] text-white overflow-x-hidden pb-32">
+        <main ref={containerRef} className="min-h-screen bg-[#0A0A0A] text-white overflow-x-hidden pb-32">
             {/* Hero Section */}
             <section className="min-h-[90dvh] flex flex-col items-center justify-center px-4 relative z-10 gap-8 mt-50">
                 <span className={`block transform scale-y-[2.5] origin-bottom ${anton.className} uppercase text-7xl leading-[0.8] tracking-[-0.05em] sm:text-8xl md:text-10xl lg:text-[10rem] xl:text-[12rem] xl:tracking-[-0.02em]`}>
-                    ABOUT FRÅNDS
+                    {t.about.heroTitle}
                 </span>
                 <p className={`text-xl md:text-3xl ${openSans.className} text-gray-200 w-full px-4 sm:px-8 text-center leading-relaxed`}>
-                    Wir kreieren eine Social Media Platform für User*innen und nicht für Werbetreibende und Investoren.
+                    {t.about.heroSubtitle1}
                     <br />
-                    Eine Platform um nichts bei seinen Freund*innen zu verpassen, ohne abgelenkt zu werden.
+                    {t.about.heroSubtitle2}
                 </p>
             </section>
 
@@ -101,17 +103,13 @@ export default function AboutPage() {
                     <div className="w-full">
                         <div className="value-title-wrap inline-block mb-6 opacity-0">
                             <h3 className="flex gap-4 md:gap-8 text-7xl md:text-[9rem] tracking-tighter text-white leading-none">
-                                <span>Our</span>
-                                <span>Vision</span>
+                                <span>{t.about.visionTitle1}</span>
+                                <span>{t.about.visionTitle2}</span>
                             </h3>
                         </div>
                         <div className={`value-desc space-y-6 text-xl leading-relaxed ${openSans.className} text-gray-200 sm:text-2xl md:text-3xl lg:leading-[1.5] w-full mt-12 mb-32 opacity-0 max-w-7xl mx-auto`}>
-                            <p>
-                                Heutzutage hat Social Media ihren Wert als soziale Plattform verloren. Den eigenen Freund*innen zu folgen und nur deren Posts zu sehen ist schon längst im Hintergrund geraten. Stattdessen werden User*innen mit endlos viel generierten Content geflutet, damit diese so lange wie möglich auf der Platform bleiben und so viel Geld wie möglich generieren. Die Privatsphäre spielt dabei keine Rolle, jegliche Posts und Kommentare werden analysiert sowie jede Interaction vom User mit der App. Konsum steht im Fokus, nicht das Updaten unter Freund*innen. &quot;Social&quot; Media wurde zu Media.
-                            </p>
-                            <p>
-                                Wir wollen das ursprüngliche Social Media wieder zurückbringen, eine Plattform nur um sich mit seinen Freund*innen zu connecten und zu updaten ohne die Gefahr von irgendwelchen News überwältigt zu werden oder durch einen Swipe dem Doomscrolling und Brainrot zu verfallen. Eine Platform um auch mal abschalten zu können ohne was wichtiges zu verfassen. Dabei spielt die Privatsphäre die wichtigste Rolle. Wir analysieren keine Posts und Kommentare oder das Nutzungsverhalten innerhalb von der App. Wir wollen das ohne Investoren schaffen, weil hier große Gewinnen nicht im Mittelpunkt stehen, und so die Entscheidung immer nur von uns getroffen wird.
-                            </p>
+                            <p>{t.about.visionText1}</p>
+                            <p>{t.about.visionText2}</p>
                         </div>
                     </div>
                 </div>
@@ -123,8 +121,8 @@ export default function AboutPage() {
                     <div className="w-full">
                         <div className="value-title-wrap inline-block mb-6 opacity-0">
                             <h3 className="flex gap-4 md:gap-8 text-7xl md:text-[9rem]  tracking-tighter text-white leading-none">
-                                <span>Das</span>
-                                <span>Team</span>
+                                <span>{t.about.teamTitle1}</span>
+                                <span>{t.about.teamTitle2}</span>
                             </h3>
                         </div>
                         <div className={`value-desc flex flex-col items-center space-y-6 text-xl leading-relaxed ${openSans.className} text-gray-200 sm:text-2xl md:text-3xl lg:leading-[1.5] w-full mt-12 mb-32 opacity-0 max-w-7xl mx-auto`}>
@@ -133,13 +131,13 @@ export default function AboutPage() {
                                 <img src="/ProfilePic.webp" alt="Benedict Kunzmann" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=Benedict+Kunzmann&background=random'; }} />
                             </div>
                             <div>
-                                <h4 className="text-3xl md:text-5xl  text-white mb-2">Benedict Kunzmann</h4>
-                                <p className={`text-lg md:text-xl ${openSans.className} text-blue-500 font-semibold mb-8`}>Founder</p>
+                                <h4 className="text-3xl md:text-5xl  text-white mb-2">{t.about.founderName}</h4>
+                                <p className={`text-lg md:text-xl ${openSans.className} text-blue-500 font-semibold mb-8`}>{t.about.founderRole}</p>
                             </div>
                             <p className={`max-w-4xl ${openSans.className}`}>
-                                Hey! Ich bin Bene, bin 26 Jahre alt und lebe derzeit in Leipzig. Ich hab FRANDS angefangen zu programmieren, weil ich keine Lust mehr auf die ganzen Social-Media Platformen hatte, die nur noch auf Profit und Clicks ausgelegt sind. Eine Platform wo man einfach seine Erinnerungen teilen kann, ohne das man direkt Doomscrolled und seine ganzen Daten verkauft. Halt so ein klassisches Social-Media.
+                                {t.about.founderBio1}
                                 <br />
-                                Das Team besteht zurzeit aus zwei Leuten: Ich kümmere mich um die ganze Programmierung der App und alles was im Hintergrund noch so abgeht und einer Designerin, die sich um das Design der App und Website kümmert.
+                                {t.about.founderBio2}
                             </p>
                         </div>
                     </div>

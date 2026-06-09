@@ -46,10 +46,17 @@ export default function InstagramImportGuide() {
                 </article>
             </div>
 
-            <article className="rounded-3xl border border-white/10 bg-[#0c1218] p-7 md:p-8">
-                <h2 className="text-2xl md:text-3xl text-white mb-3 tracking-tight">{content.noteTitle}</h2>
-                <p className="text-gray-300 text-lg leading-relaxed">{content.noteText}</p>
-            </article>
+            <div className="grid gap-8 lg:grid-cols-2">
+                <article className="rounded-3xl border border-white/10 bg-[#0c1218] p-7 md:p-8">
+                    <h2 className="text-2xl md:text-3xl text-white mb-3 tracking-tight">{content.noteTitle}</h2>
+                    <p className="text-gray-300 text-lg leading-relaxed">{content.noteText}</p>
+                </article>
+
+                <article className="rounded-3xl border border-amber-500/30 bg-[#1a1408] p-7 md:p-8">
+                    <h2 className="text-2xl md:text-3xl text-white mb-3 tracking-tight">{content.waitTitle}</h2>
+                    <p className="text-gray-300 text-lg leading-relaxed">{content.waitText}</p>
+                </article>
+            </div>
         </section>
     );
 }

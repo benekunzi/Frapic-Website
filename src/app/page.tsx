@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { Anton, Open_Sans } from "next/font/google";
+import FormatsSection from "@/components/FormatsSection";
+// import { FutureTasksSection } from "@/components/FutureTasksSection";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 const openSans = Open_Sans({ weight: ["400"], subsets: ["latin"] });
@@ -19,33 +20,6 @@ export default function Home() {
   const pageRef = useRef<HTMLDivElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const [activeSection, setActiveSection] = useState("formats");
-
-  const formatSlides = [
-    {
-      alt: "Back-Front",
-      name: t.formats.slides[0].name,
-      description: t.formats.slides[0].description,
-    },
-    {
-      alt: "Story",
-      name: t.formats.slides[1].name,
-      description: t.formats.slides[1].description,
-    },
-    {
-      alt: "Post",
-      name: t.formats.slides[2].name,
-      description: t.formats.slides[2].description,
-    },
-  ];
-
-  const floatingImages = [
-    { src: "/FRAND-1.webp", alt: "Format 1", floatDuration: 3.2, floatDelay: 0 },
-    { src: "/FRAND-2.webp", alt: "Format 2", floatDuration: 3.8, floatDelay: 0.6 },
-    { src: "/Story-1.webp", alt: "Story 1", floatDuration: 3.5, floatDelay: 0.3 },
-    { src: "/Story-2.webp", alt: "Story 2", floatDuration: 4.0, floatDelay: 0.9 },
-    { src: "/Post-1.webp", alt: "Post 1", floatDuration: 3.3, floatDelay: 0.15 },
-    { src: "/Post-2.webp", alt: "Post 2", floatDuration: 3.7, floatDelay: 0.75 },
-  ];
 
   const valuesData = [
     {
@@ -145,8 +119,7 @@ export default function Home() {
       mm.add({
         isDesktop: "(min-width: 768px)",
         isMobile: "(max-width: 767px)",
-      }, (context) => {
-        const { isDesktop } = context.conditions as { isDesktop: boolean };
+      }, () => {
 
         gsap.fromTo(
           ".hero-title",
@@ -159,62 +132,6 @@ export default function Home() {
           { y: 28, opacity: 0 },
           { y: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.2 }
         );
-
-        const vw = window.innerWidth;
-        const vh = window.innerHeight;
-
-        const imgPositions = isDesktop ? [
-          { x: -0.30 * vw, y: -0.36 * vh, rotation: -8 },  // left upper
-          { x: -0.42 * vw, y: -0.20 * vh, rotation: 5 },   // left mid
-          { x: -0.30 * vw, y: 0.08 * vh, rotation: 3 },   // left lower
-          { x: 0.28 * vw, y: -0.36 * vh, rotation: -5 },  // right upper
-          { x: 0.34 * vw, y: -0.10 * vh, rotation: 7 },   // right mid
-          { x: 0.38 * vw, y: 0.08 * vh, rotation: -4 },  // right lower
-        ] : [
-          { x: -0.33 * vw, y: -0.55 * vh, rotation: -6 },
-          { x: -0.48 * vw, y: -0.15 * vh, rotation: 4 },
-          { x: -0.25 * vw, y: 0.10 * vh, rotation: 2 },
-          { x: 0.1 * vw, y: -0.55 * vh, rotation: -4 },
-          { x: 0.28 * vw, y: -0.38 * vh, rotation: 5 },
-          { x: 0.30 * vw, y: 0.05 * vh, rotation: -3 },
-        ];
-
-        const imgFinalScale = isDesktop ? 1.0 : 0.75;
-
-        gsap.set(".formats-copy", { y: "100vh" });
-        gsap.set(".format-floating-img", {
-          transformOrigin: "50% 100%",
-          scale: isDesktop ? 0.25 : 0.35,
-          x: 0,
-          y: 0,
-          rotation: 0,
-        });
-
-        const formatsTimeline = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".formats-scene",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1,
-          },
-        });
-
-        formatsTimeline
-          .to(".hero-copy", { y: "-100vh", ease: "none" }, 0)
-          .to(".formats-copy", { y: 0, ease: "none" }, 0);
-
-        imgPositions.forEach((pos, i) => {
-          formatsTimeline.to(
-            `.format-floating-img-${i}`,
-            { scale: imgFinalScale, x: pos.x, y: pos.y, rotation: pos.rotation, ease: "none" },
-            0
-          );
-        });
-
-        // Add a "pause" at the end of the timeline so the animations finish
-        // before the section un-sticks, allowing the user to see it resting in place.
-        // Reduced duration so the "dead scroll" zone is shorter.
-        formatsTimeline.to({}, { duration: 0.1 });
 
         // Journals Section Animation
         gsap.set(".journals-text", { y: "15vh" }); // Add vertical movement
@@ -361,9 +278,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main ref={pageRef} className="bg-[#0b1015] text-white">
+    <main ref={pageRef} className="bg-[#0A0A0A] text-white">
       {/* Floating Pill Navigation */}
-      <div className="fixed bottom-6 left-1/2 z-50 flex w-max -translate-x-1/2 items-center justify-center gap-0 sm:gap-2 rounded-full border border-white/10 bg-[#0b1015]/70 p-0.5 sm:px-2 sm:py-2 backdrop-blur-xl shadow-2xl">
+      <div className="fixed bottom-6 left-1/2 z-50 flex w-max -translate-x-1/2 items-center justify-center gap-0 sm:gap-2 rounded-full border border-white/10 bg-[#0A0A0A]/70 p-0.5 sm:px-2 sm:py-2 backdrop-blur-xl shadow-2xl">
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
           return (
@@ -386,76 +303,84 @@ export default function Home() {
         })}
       </div>
 
-      <section id="formats" className="formats-scene relative min-h-[200vh] overflow-x-clip px-6 md:px-12">
-        <div className="sticky top-0 min-h-screen">
-          <div className="relative mx-auto min-h-screen w-full max-w-7xl">
-            <div className="hero-copy absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/6 text-center">
-              <h1 className="hero-title">
-                <span className={`block transform scale-y-[2.5] origin-bottom ${anton.className} uppercase text-7xl leading-[0.8] tracking-[-0.05em] sm:text-8xl md:text-10xl lg:text-[10rem] xl:text-[12rem] xl:tracking-[-0.02em]`}>
-                  {t.hero.title1}
-                </span>
-                <span className="block mt-8 $ text-lg font-light uppercase tracking-[0.3em] text-gray-300 sm:text-xl md:text-4xl">
-                  {t.hero.title2}
-                </span>
-              </h1>
-              <p className={`hero-subtitle mt-8 mx-auto max-w-2xl ${openSans.className} text-base text-gray-400 sm:text-lg md:text-xl`}>
-                {t.hero.subtitle}
-              </p>
-            </div>
-
-            <div className="pointer-events-none absolute bottom-26 left-1/2 z-10 md:bottom-22">
-              {floatingImages.map((img, i) => (
-                <div
-                  key={img.alt}
-                  className={`format-floating-img format-floating-img-${i} absolute`}
-                  style={{ left: "-55px", bottom: 0 }}
-                >
-                  <div
-                    style={{
-                      animation: `floatBob ${img.floatDuration}s ease-in-out ${img.floatDelay}s infinite`,
-                    }}
-                  >
-                    <div className="relative w-[110px] aspect-[9/19.5]">
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        draggable={false}
-                        sizes="110px"
-                        className="object-contain select-none"
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center">
-              <div className="formats-copy w-full md:w-2/3 px-8 md:px-16">
-                <h2 className="mb-10 text-3xl tracking-tight sm:text-5xl md:text-7xl text-center">
-                  {t.formats.title}
-                </h2>
-
-                <div className="relative flex flex-col gap-12 text-center w-full">
-                  {formatSlides.map((slide) => (
-                    <div
-                      key={slide.alt}
-                      className="h-20 sm:h-24 flex flex-col justify-center"
-                    >
-                      <h3 className="font-regular text-white text-2xl sm:text-4xl">
-                        {slide.name}
-                      </h3>
-                      <p className={`mt-1 md:mt-2 ${openSans.className} text-gray-300 text-base sm:text-xl font-light`}>
-                        {slide.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-x-clip px-6 md:px-12 md:mt-[10vh] z-30">
+        <div className="relative mx-auto w-full max-w-7xl">
+          <div className="hero-copy w-full text-center mt-20">
+            <h1 className="hero-title">
+              <span className={`block transform scale-y-[2.5] origin-bottom ${anton.className} uppercase text-7xl leading-[0.8] tracking-[-0.05em] sm:text-8xl md:text-10xl lg:text-[10rem] xl:text-[12rem] xl:tracking-[-0.02em]`}>
+                {t.hero.title1}
+              </span>
+              <span className="block mt-8 text-lg font-light uppercase tracking-[0.3em] text-gray-300 sm:text-xl md:text-4xl">
+                {t.hero.title2}
+              </span>
+            </h1>
+            <p className={`hero-subtitle mt-8 mx-auto max-w-2xl ${openSans.className} text-base text-gray-400 sm:text-lg md:text-xl`}>
+              {t.hero.subtitle}
+            </p>
           </div>
         </div>
       </section>
+
+      {/* Manifesto Section */}
+      <section className="relative bg-[#0A0A0A] px-6 py-28 md:py-40 overflow-hidden z-30">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(233,78,52,0.05)_0%,_transparent_65%)] pointer-events-none" />
+        <div className="relative max-w-5xl mx-auto text-center">
+          <motion.p
+            className="text-[#e94e34] text-xs tracking-[0.4em] uppercase mb-10"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            {t.manifesto.tag}
+          </motion.p>
+
+          <motion.h2
+            className={`${anton.className} uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight mb-16`}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
+          >
+            <span className="block">{t.manifesto.headline1}</span>
+            <span className="block">{t.manifesto.headline2}</span>
+          </motion.h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-5 mb-16 max-w-3xl mx-auto text-left">
+            {t.manifesto.noItems.map((item, i) => {
+              const firstWord = item.split(" ")[0];
+              const rest = item.slice(firstWord.length);
+              return (
+                <motion.p
+                  key={item}
+                  className={`${openSans.className} text-xl md:text-2xl lg:text-3xl font-light`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.07 }}
+                >
+                  <span className="text-[#e94e34] font-semibold">{firstWord}</span>
+                  <span className="text-white">{rest}</span>
+                </motion.p>
+              );
+            })}
+          </div>
+
+          <motion.p
+            className={`${openSans.className} text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed`}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            {t.manifesto.description}
+          </motion.p>
+        </div>
+      </section>
+
+      {/* Formats Section */}
+      <FormatsSection />
 
       {/* Shared Journals Section */}
       <section id="journals" className="journals-scene relative flex min-h-screen items-center overflow-x-clip px-4 py-32 md:px-8 mt-[-10vh] z-30 mb-[10vh]">
@@ -484,21 +409,27 @@ export default function Home() {
           </div>
 
           <div className="relative flex w-full justify-center md:w-1/2 md:justify-end pr-0 md:pr-12 lg:pr-24">
-            <div className="journals-image relative aspect-[864/1600] w-full max-w-[260px] lg:max-w-[320px]">
-              <Image
-                src="/JournalDetail.webp"
-                alt="Shared Journal"
-                fill
-                className="object-cover"
-              />
+            <div className="journals-image relative aspect-[320/693] w-full max-w-[260px] lg:max-w-[320px] rounded-[42px] p-[7px] bg-[linear-gradient(150deg,#2a2a2e,#0c0c0d_42%,#1a1a1d)] shadow-[0_2px_4px_rgba(0,0,0,.6),0_50px_90px_-22px_rgba(0,0,0,.92),inset_0_0_0_1px_rgba(255,255,255,.10)]">
+              <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-[#111]">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-full object-cover"
+                >
+                  <source src="/journal-promo.webm" type="video/webm" />
+                  <source src="/journal-promo.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[84px] h-[26px] bg-black rounded-full z-10" />
+              </div>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* Core Values Section */}
-      <section className="values-scene relative bg-[#0b1015] overflow-hidden pb-[5vh] pt-12 md:pb-[30vh] md:pt-12 mt-[-10vh]">
+      <section className="values-scene relative bg-[#0A0A0A] overflow-hidden pb-[5vh] pt-12 md:pb-[15vh] md:pt-12 mt-[-10vh]">
         <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-40 px-6 md:gap-80 md:px-12">
           {valuesData.map((val, i) => {
             const isRight = i % 2 === 0;
@@ -534,6 +465,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Download CTA Section */}
+      <section id="download" className="relative bg-[#0A0A0A] px-6 py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(233,78,52,0.07)_0%,_transparent_60%)] pointer-events-none" />
+        <div className="relative max-w-3xl mx-auto text-center">
+          <motion.p
+            className="text-[#e94e34] text-xs tracking-[0.4em] uppercase mb-6"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            {t.download.tag}
+          </motion.p>
+
+          <motion.h2
+            className={`${anton.className} uppercase text-7xl md:text-9xl leading-[0.9] tracking-tight mb-6`}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
+          >
+            {t.download.title}
+          </motion.h2>
+
+          <motion.p
+            className={`${openSans.className} text-gray-400 text-xl mb-12`}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+          >
+            {t.download.subtitle}
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+          >
+            <a
+              href="#"
+              className="flex items-center gap-4 pl-5 pr-8 py-4 bg-white rounded-2xl hover:bg-white/90 transition-all shadow-lg w-56"
+            >
+              <svg viewBox="0 0 24 24" className="w-8 h-8 fill-black shrink-0">
+                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.78,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.76 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+              </svg>
+              <div className="text-left">
+                <p className="text-black/50 text-[10px] leading-tight">{t.download.iosPrefix}</p>
+                <p className="text-black text-base font-bold leading-tight">{t.download.iosStore}</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              className="flex items-center gap-4 pl-5 pr-8 py-4 bg-white rounded-2xl hover:bg-white/90 transition-all shadow-lg w-56"
+            >
+              <svg viewBox="0 0 24 24" className="w-8 h-8 fill-black shrink-0">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+              </svg>
+              <div className="text-left">
+                <p className="text-black/50 text-[10px] leading-tight">{t.download.androidPrefix}</p>
+                <p className="text-black text-base font-bold leading-tight">{t.download.androidStore}</p>
+              </div>
+            </a>
+          </motion.div>
+
+          <p className={`${openSans.className} text-gray-600 text-sm`}>{t.download.comingSoon}</p>
+        </div>
+      </section>
     </main>
   );
 }

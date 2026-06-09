@@ -14,7 +14,7 @@ export default function FAQ() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
-        <main className="min-h-screen bg-[#0b1015] pt-32 pb-20">
+        <main className="min-h-screen bg-[#0A0A0A] pt-32 pb-20">
             <section id="faq" className="container-custom max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl  mb-12 text-center text-white">{t.faq.title}</h2>
                 <div className="space-y-4">
