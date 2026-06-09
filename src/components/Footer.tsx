@@ -19,7 +19,7 @@ export default function Footer() {
                             The free social media app built exclusively for close friends. Share photos, stories & journals — private by default, no algorithm, no data selling.
                         </p>
                         <div className="flex flex-col gap-3">
-                            <a
+                            <Link
                                 href="/#download"
                                 className="flex items-center gap-3 px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors w-max"
                             >
@@ -30,8 +30,8 @@ export default function Footer() {
                                     <p className="text-white/50 text-[9px] leading-tight">Download on the</p>
                                     <p className="text-white text-xs font-semibold leading-tight">App Store</p>
                                 </div>
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="/#download"
                                 className="flex items-center gap-3 px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors w-max"
                             >
@@ -42,7 +42,7 @@ export default function Footer() {
                                     <p className="text-white/50 text-[9px] leading-tight">Get it on</p>
                                     <p className="text-white text-xs font-semibold leading-tight">Google Play</p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

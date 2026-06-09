@@ -59,7 +59,7 @@ export default function AboutPage() {
                 if (sectionEl) {
                     const elementsToAnimate = sectionEl.querySelectorAll(".value-title-wrap, .value-desc");
 
-                    elementsToAnimate.forEach((el, index) => {
+                    elementsToAnimate.forEach((el) => {
                         gsap.fromTo(
                             el,
                             { y: 60, autoAlpha: 0 },
