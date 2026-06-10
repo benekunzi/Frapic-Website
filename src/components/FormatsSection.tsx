@@ -3,11 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Anton, Open_Sans } from "next/font/google";
+import { useLanguage } from "@/context/LanguageContext";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 const sans = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function FormatsSection() {
+  const { t } = useLanguage();
   return (
     <section
       id="formats"
@@ -29,7 +31,7 @@ export default function FormatsSection() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              Formate
+              {t.navItems.formats}
             </motion.span>
             <motion.h2
               className={`font-normal text-[clamp(44px,6.6vw,92px)] leading-[.92] tracking-[-.005em] ${anton.className}`}
@@ -38,7 +40,7 @@ export default function FormatsSection() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
             >
-              Alle Formate,<br /><em className="not-italic text-[#74747c]">die du brauchst.</em>
+              {t.formatsSection.title1}<br /><em className="not-italic text-[#74747c]">{t.formatsSection.title2}</em>
             </motion.h2>
           </div>
           <motion.p
@@ -48,8 +50,7 @@ export default function FormatsSection() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            Ein Moment, drei Wege ihn zu teilen — vom{" "}
-            <b>Dual-Kamera-Frapic</b> über flüchtige Storys bis zur Erinnerung, die für immer bleibt.
+            {t.formatsSection.subtitle}
           </motion.p>
         </header>
 
@@ -81,8 +82,8 @@ export default function FormatsSection() {
             </div>
             <div className="mt-[30px] text-center w-[min(100%,300px)] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.04]">
               <div className={`text-[11px] tracking-[.3em] text-[#fff] font-semibold ${anton.className}`}>01</div>
-              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>Story</h3>
-              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>Teile Momente im Foto- oder Videoformat, die nach 24 Stunden verschwinden.</p>
+              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>{t.formatsSection.storyName}</h3>
+              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>{t.formatsSection.storyDesc}</p>
             </div>
           </motion.article>
 
@@ -111,8 +112,8 @@ export default function FormatsSection() {
             </div>
             <div className="mt-[30px] text-center w-[min(100%,300px)] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.04]">
               <div className={`text-[11px] tracking-[.3em] text-[#fff] font-semibold ${anton.className}`}>02</div>
-              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>Frapic</h3>
-              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>Ein Moment aus beiden Perspektiven — Vorder- und Rückkamera in einer Aufnahme. 24 Stunden im Feed.</p>
+              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>{t.formatsSection.frapicName}</h3>
+              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>{t.formatsSection.frapicDesc}</p>
             </div>
           </motion.article>
 
@@ -140,8 +141,8 @@ export default function FormatsSection() {
             </div>
             <div className="mt-[30px] text-center w-[min(100%,300px)] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.04]">
               <div className={`text-[11px] tracking-[.3em] text-[#fff] font-semibold ${anton.className}`}>03</div>
-              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>Post</h3>
-              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>Für zeitlose Erinnerungen, die du für immer auf deinem Profil behältst.</p>
+              <h3 className={`font-normal text-[30px] leading-none my-[9px] tracking-[.01em] ${anton.className}`}>{t.formatsSection.postName}</h3>
+              <p className={`text-[#8a8a8e] text-[13.5px] leading-[1.5] ${sans.className}`}>{t.formatsSection.postDesc}</p>
             </div>
           </motion.article>
 
