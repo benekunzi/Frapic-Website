@@ -323,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* Manifesto Section */}
-      <section className="relative bg-[#0A0A0A] px-6 py-28 md:py-40 overflow-hidden z-30">
+      <section className="relative bg-[#0A0A0A] px-6 py-10 md:py-10 overflow-hidden z-30">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(233,78,52,0.05)_0%,_transparent_65%)] pointer-events-none" />
         <div className="relative max-w-5xl mx-auto text-center">
           <motion.p
