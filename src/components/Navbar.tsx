@@ -34,7 +34,7 @@ export default function Navbar() {
             <div className="mx-auto max-w-7xl px-6 md:px-12 flex items-center justify-between text-white">
                 {/* Logo */}
                 <Link href="/" className="text-2xl tracking-tighter hover:opacity-80 transition-opacity flex items-center">
-                    <Image src="/Frapic-logo.png" alt="Frapic Logo" width={40} height={40} className="inline-block mr-2" />
+                    <Image src="/Frapic-Logo.png" alt="Frapic Logo" width={40} height={40} className="inline-block mr-2" />
                     <Image src="/frapic-logo-font.png" alt="Frapic Logo Font" width={80} height={80} className="inline-block mr-2" />
                 </Link>
 
