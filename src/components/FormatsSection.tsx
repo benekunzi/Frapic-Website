@@ -98,7 +98,7 @@ export default function FormatsSection() {
               <div className="relative w-[282px] max-[1080px]:w-[248px] max-[920px]:w-[262px] aspect-[9/19.4] rounded-[42px] p-[7px] bg-[linear-gradient(150deg,#2a2a2e,#0c0c0d_42%,#1a1a1d)] shadow-[0_2px_4px_rgba(0,0,0,.6),0_50px_90px_-22px_rgba(0,0,0,.92),inset_0_0_0_1px_rgba(255,255,255,.10)] mt-5">
                 <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-[#111] text-[13px]">
                   <Image
-                    src="/Frapic.jpeg"
+                    src="/Frapic-Example.jpeg"
                     alt=""
                     fill
                     style={{ objectFit: "cover", zIndex: 0 }}
