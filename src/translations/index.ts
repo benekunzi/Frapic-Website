@@ -173,6 +173,40 @@ export const translations = {
             waitTitle: "Import Availability",
             waitText: "The Instagram import feature becomes available two weeks after you create your account. This helps us manage server costs and ensure a smooth experience for everyone.",
         },
+        deleteAccountPage: {
+            title: "Delete Account",
+            subtitle: "You can permanently delete your Frapic account and all associated data directly from within the app.",
+            stepsTitle: "How to Delete Your Account",
+            steps: [
+                {
+                    title: "1. Open your Profile",
+                    description: "Tap the profile icon in the bottom navigation bar to open your profile page.",
+                },
+                {
+                    title: "2. Open Settings",
+                    description: "Tap the settings icon in the top right corner of your profile page.",
+                },
+                {
+                    title: "3. Scroll down to 'Delete Account'",
+                    description: "Scroll to the bottom of the settings page until you see the 'Delete Account' option.",
+                },
+                {
+                    title: "4. Confirm deletion",
+                    description: "Tap 'Delete Account' and confirm in the dialog that appears. Your account will be permanently deleted.",
+                },
+            ],
+            dataTitle: "What Data Gets Deleted",
+            dataItems: [
+                "Your profile information (name, username, profile picture, bio)",
+                "All your posts, stories, and Frapics",
+                "All your journal entries and journal media",
+                "All your comments and reactions",
+                "All your friendships and friend requests",
+                "Your account credentials and login data",
+            ],
+            warningTitle: "Important",
+            warningText: "Account deletion is permanent and irreversible. Once deleted, your account and all associated data cannot be recovered. There is no retention period — all data is removed immediately upon deletion.",
+        },
     },
     de: {
         navbar: {
@@ -348,6 +382,40 @@ export const translations = {
             waitTitle: "Verfügbarkeit des Imports",
             waitText: "Die Instagram-Import-Funktion wird zwei Wochen nach der Erstellung deines Kontos freigeschaltet. So können wir die Serverkosten im Griff behalten und ein reibungsloses Erlebnis für alle sicherstellen.",
         },
+        deleteAccountPage: {
+            title: "Konto löschen",
+            subtitle: "Du kannst dein Frapic-Konto und alle zugehörigen Daten dauerhaft direkt in der App löschen.",
+            stepsTitle: "So löschst du dein Konto",
+            steps: [
+                {
+                    title: "1. Profil öffnen",
+                    description: "Tippe auf das Profil-Symbol in der unteren Navigationsleiste, um dein Profil zu öffnen.",
+                },
+                {
+                    title: "2. Einstellungen öffnen",
+                    description: "Tippe auf das Einstellungs-Symbol oben rechts auf deiner Profilseite.",
+                },
+                {
+                    title: "3. Zu 'Konto löschen' scrollen",
+                    description: "Scrolle auf der Einstellungsseite nach unten, bis du die Option 'Konto löschen' siehst.",
+                },
+                {
+                    title: "4. Löschung bestätigen",
+                    description: "Tippe auf 'Konto löschen' und bestätige im erscheinenden Dialog. Dein Konto wird dauerhaft gelöscht.",
+                },
+            ],
+            dataTitle: "Welche Daten gelöscht werden",
+            dataItems: [
+                "Deine Profilinformationen (Name, Benutzername, Profilbild, Bio)",
+                "Alle deine Posts, Stories und Frapics",
+                "Alle deine Journal-Einträge und Journal-Medien",
+                "Alle deine Kommentare und Reaktionen",
+                "Alle deine Freundschaften und Freundschaftsanfragen",
+                "Deine Zugangsdaten und Login-Informationen",
+            ],
+            warningTitle: "Wichtiger Hinweis",
+            warningText: "Die Kontolöschung ist dauerhaft und unwiderruflich. Nach der Löschung können dein Konto und alle zugehörigen Daten nicht wiederhergestellt werden. Es gibt keine Aufbewahrungsfrist – alle Daten werden sofort bei der Löschung entfernt.",
+        },
     },
     es: {
         navbar: {
@@ -522,6 +590,40 @@ export const translations = {
             noteText: "El enlace de descarga suele llegar en pocos minutos, pero puede tardar más en cuentas grandes.",
             waitTitle: "Disponibilidad de la importación",
             waitText: "La función de importación de Instagram estará disponible dos semanas después de crear tu cuenta. Esto nos ayuda a gestionar los costes del servidor y garantizar una experiencia fluida para todos.",
+        },
+        deleteAccountPage: {
+            title: "Eliminar cuenta",
+            subtitle: "Puedes eliminar permanentemente tu cuenta de Frapic y todos los datos asociados directamente desde la app.",
+            stepsTitle: "Cómo eliminar tu cuenta",
+            steps: [
+                {
+                    title: "1. Abre tu perfil",
+                    description: "Toca el icono de perfil en la barra de navegación inferior para abrir tu página de perfil.",
+                },
+                {
+                    title: "2. Abre ajustes",
+                    description: "Toca el icono de ajustes en la esquina superior derecha de tu página de perfil.",
+                },
+                {
+                    title: "3. Desplázate hasta 'Eliminar cuenta'",
+                    description: "Desplázate hacia abajo en la página de ajustes hasta que veas la opción 'Eliminar cuenta'.",
+                },
+                {
+                    title: "4. Confirma la eliminación",
+                    description: "Toca 'Eliminar cuenta' y confirma en el cuadro de diálogo que aparece. Tu cuenta se eliminará de forma permanente.",
+                },
+            ],
+            dataTitle: "Qué datos se eliminan",
+            dataItems: [
+                "Tu información de perfil (nombre, nombre de usuario, foto de perfil, biografía)",
+                "Todas tus publicaciones, historias y Frapics",
+                "Todas tus entradas de diario y medios del diario",
+                "Todos tus comentarios y reacciones",
+                "Todas tus amistades y solicitudes de amistad",
+                "Tus credenciales de cuenta e información de inicio de sesión",
+            ],
+            warningTitle: "Importante",
+            warningText: "La eliminación de cuenta es permanente e irreversible. Una vez eliminada, tu cuenta y todos los datos asociados no pueden recuperarse. No hay periodo de retención: todos los datos se eliminan de forma inmediata al borrar la cuenta.",
         },
     },
 };
