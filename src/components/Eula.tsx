@@ -2,17 +2,17 @@ import React from 'react';
 
 const eulaText = `END USER LICENSE AGREEMENT
 
-Last updated ________
+Last updated June 13, 2026
 
-________ is licensed to You (End-User) by ________, located at ________, ________, ________ ("Licensor"), for use only under the terms of this License Agreement.
+Friends is licensed to You (End-User) by Benedict Kunzmann, located at Leipzig, 04105 Leipzig, Germany ("Licensor"), for use only under the terms of this License Agreement.
 
 By downloading the Licensed Application from, and any update thereto (as permitted by this License Agreement), You indicate that You agree to be bound by all of the terms and conditions of this License Agreement, and that You accept this License Agreement, referred to in this License Agreement as "Services."
 
-The parties of this License Agreement acknowledge that the Services are not a Party to this License Agreement and are not bound by any provisions or obligations with regard to the Licensed Application, such as warranty, liability, maintenance and support thereof. ________, not the Services, is solely responsible for the Licensed Application and the content thereof.
+The parties of this License Agreement acknowledge that the Services are not a Party to this License Agreement and are not bound by any provisions or obligations with regard to the Licensed Application, such as warranty, liability, maintenance and support thereof. Benedict Kunzmann, not the Services, is solely responsible for the Licensed Application and the content thereof.
 
-This License Agreement may not provide for usage rules for the Licensed Application that are in conflict with the latest ("Usage Rules"). ________ acknowledges that it had the opportunity to review the Usage Rules and this License Agreement is not conflicting with them.
+This License Agreement may not provide for usage rules for the Licensed Application that are in conflict with the latest ("Usage Rules"). Benedict Kunzmann acknowledges that it had the opportunity to review the Usage Rules and this License Agreement is not conflicting with them.
 
-________ when purchased or downloaded through the Services, is licensed to You for use only under the terms of this License Agreement. The Licensor reserves all rights not expressly granted to You. ________ is to be used on devices that operate with ________.
+Friends when purchased or downloaded through the Services, is licensed to You for use only under the terms of this License Agreement. The Licensor reserves all rights not expressly granted to You. Friends is to be used on devices that operate with iOS and Android.
 
 TABLE OF CONTENTS
 
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 
 1. THE APPLICATION
 
-________ ("Licensed Application") is a piece of software created to ________ and customized for mobile devices ("Devices"). It is used to ________.
+Friends ("Licensed Application") is a piece of software created to provide a private social media app to share moments with your friends and customized for mobile devices ("Devices"). It is used to share photos, videos, and stories privately with your friends.
 
 2. SCOPE OF LICENSE
 
@@ -43,9 +43,9 @@ ________ ("Licensed Application") is a piece of software created to ________ and
 
 4. NO MAINTENANCE OR SUPPORT
 
-4.1 ________ is not obligated, expressed or implied, to provide any maintenance, technical or other support for the Licensed Application.
+4.1 Benedict Kunzmann is not obligated, expressed or implied, to provide any maintenance, technical or other support for the Licensed Application.
 
-4.2 ________ and the End-User acknowledge that the Services have no obligation whatsoever to furnish any maintenance and support services with respect to the Licensed Application.
+4.2 Benedict Kunzmann and the End-User acknowledge that the Services have no obligation whatsoever to furnish any maintenance and support services with respect to the Licensed Application.
 
 5. USER-GENERATED CONTRIBUTIONS
 
@@ -81,11 +81,11 @@ We do not assert any ownership over your Contributions. You retain full ownershi
 
 8.1 Licensor warrants that the Licensed Application is free of spyware, trojan horses, viruses, or any other malware at the time of Your download. Licensor warrants that the Licensed Application works as described in the user documentation.
 
-8.2 No warranty is provided for the Licensed Application that is not executable on the device, that has been unauthorizedly modified, handled inappropriately or culpably, combined or installed with inappropriate hardware or software, used with inappropriate accessories, regardless if by Yourself or by third parties, or if there are any other reasons outside of ________'s sphere of influence that affect the executability of the Licensed Application.
+8.2 No warranty is provided for the Licensed Application that is not executable on the device, that has been unauthorizedly modified, handled inappropriately or culpably, combined or installed with inappropriate hardware or software, used with inappropriate accessories, regardless if by Yourself or by third parties, or if there are any other reasons outside of Benedict Kunzmann's sphere of influence that affect the executability of the Licensed Application.
 
-8.3 You are required to inspect the Licensed Application immediately after installing it and notify ________ about issues discovered without delay by email provided in Contact Information. The defect report will be taken into consideration and further investigated if it has been emailed within a period of ________ days after discovery.
+8.3 You are required to inspect the Licensed Application immediately after installing it and notify Benedict Kunzmann about issues discovered without delay by email provided in Contact Information. The defect report will be taken into consideration and further investigated if it has been emailed within a period of 14 days after discovery.
 
-8.4 If we confirm that the Licensed Application is defective, ________ reserves a choice to remedy the situation either by means of solving the defect or substitute delivery.
+8.4 If we confirm that the Licensed Application is defective, Benedict Kunzmann reserves a choice to remedy the situation either by means of solving the defect or substitute delivery.
 
 8.5 In the event of any failure of the Licensed Application to conform to any applicable warranty, You may notify the Services Store Operator, and Your Licensed Application purchase price will be refunded to You. To the maximum extent permitted by applicable law, the Services Store Operator will have no other warranty obligation whatsoever with respect to the Licensed Application, and any other losses, claims, damages, liabilities, expenses, and costs attributable to any negligence to adhere to any warranty.
 
@@ -93,7 +93,7 @@ We do not assert any ownership over your Contributions. You retain full ownershi
 
 9. PRODUCT CLAIMS
 
-________ and the End-User acknowledge that ________, and not the Services, is responsible for addressing any claims of the End-User or any third party relating to the Licensed Application or the End-User's possession and/or use of that Licensed Application, including, but not limited to:
+Benedict Kunzmann and the End-User acknowledge that Benedict Kunzmann, and not the Services, is responsible for addressing any claims of the End-User or any third party relating to the Licensed Application or the End-User's possession and/or use of that Licensed Application, including, but not limited to:
 
 (i) product liability claims;
 (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and
@@ -107,29 +107,29 @@ You represent and warrant that You are not located in a country that is subject 
 
 For general inquiries, complaints, questions or claims concerning the Licensed Application, please contact:
 
-________
-________
-________
-________, ________ ________
-________
+Benedict Kunzmann
+Leipzig
+04105 Leipzig
+Germany
+info@frapic.de
 
 12. TERMINATION
 
-The license is valid until terminated by ________ or by You. Your rights under this license will terminate automatically and without notice from ________ if You fail to adhere to any term(s) of this license. Upon License termination, You shall stop all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application.
+The license is valid until terminated by Benedict Kunzmann or by You. Your rights under this license will terminate automatically and without notice from Benedict Kunzmann if You fail to adhere to any term(s) of this license. Upon License termination, You shall stop all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application.
 
 13. THIRD-PARTY TERMS OF AGREEMENTS AND BENEFICIARY
 
-________ represents and warrants that ________ will comply with applicable third-party terms of agreement when using Licensed Application.
+Benedict Kunzmann represents and warrants that Benedict Kunzmann will comply with applicable third-party terms of agreement when using Licensed Application.
 
 In accordance with Section 9 of the "Instructions for Minimum Terms of Developer's End-User License Agreement," subsidiaries shall be third-party beneficiaries of this End User License Agreement and, upon Your acceptance of the terms and conditions of this License Agreement, will have the right (and will be deemed to have accepted the right) to enforce this End User License Agreement against You as a third-party beneficiary thereof.
 
 14. INTELLECTUAL PROPERTY RIGHTS
 
-________ and the End-User acknowledge that, in the event of any third-party claim that the Licensed Application or the End-User's possession and use of that Licensed Application infringes on the third party's intellectual property rights, ________, and not the Services, will be solely responsible for the investigation, defense, settlement, and discharge or any such intellectual property infringement claims.
+Benedict Kunzmann and the End-User acknowledge that, in the event of any third-party claim that the Licensed Application or the End-User's possession and use of that Licensed Application infringes on the third party's intellectual property rights, Benedict Kunzmann, and not the Services, will be solely responsible for the investigation, defense, settlement, and discharge or any such intellectual property infringement claims.
 
 15. APPLICABLE LAW
 
-This License Agreement is governed by the laws of ________, excluding its conflicts of law rules.
+This License Agreement is governed by the laws of Germany, excluding its conflicts of law rules.
 
 16. MISCELLANEOUS
 

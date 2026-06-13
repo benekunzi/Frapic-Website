@@ -9,7 +9,7 @@ This Privacy Notice for Frapic ("we," "us," or "our"), describes how and why we 
 - Use Frapic. A social media app designed for absolute privacy and anti-doom-scrolling. It goes beyond the standard way of posting and creates journals for unique experiences.
 - Engage with us in other related ways, including any marketing or events
 
-Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at benedict.kunzmann@icloud.com.
+Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at info@frapic.de.
 
 SUMMARY OF KEY POINTS
 
@@ -171,7 +171,7 @@ If you would at any time like to review or change the information in your accoun
 
 Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. We may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
 
-If you have questions or comments about your privacy rights, you may email us at benedict.kunzmann@icloud.com.
+If you have questions or comments about your privacy rights, you may email us at info@frapic.de.
 
 10. CONTROLS FOR DO-NOT-TRACK FEATURES
 
@@ -208,11 +208,11 @@ Your Rights
 
 How to Exercise Your Rights
 
-To exercise these rights, you can contact us by submitting a data subject access request, by emailing us at benedict.kunzmann@icloud.com, or by using the contact details at the bottom of this document.
+To exercise these rights, you can contact us by submitting a data subject access request, by emailing us at info@frapic.de, or by using the contact details at the bottom of this document.
 
 Appeals
 
-Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at benedict.kunzmann@icloud.com.
+Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at info@frapic.de.
 
 California "Shine The Light" Law
 
@@ -226,7 +226,7 @@ We may update this Privacy Notice from time to time. The updated version will be
 
 13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 
-If you have questions or comments about this notice, you may email us at benedict.kunzmann@icloud.com or contact us by post at:
+If you have questions or comments about this notice, you may email us at info@frapic.de or contact us by post at:
 
 Frapic App Inc.
 
