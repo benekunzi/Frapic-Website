@@ -24,7 +24,7 @@ export default function Footer() {
                         </p>
                         <div className="flex flex-col gap-3">
                             <Link
-                                href="/#download"
+                                href="https://apps.apple.com/de/app/frapic/id6778465385"
                                 className={`flex items-center gap-3 px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors w-max ${openSans.className}`}
                             >
                                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white shrink-0">

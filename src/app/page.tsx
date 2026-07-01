@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { Anton, Open_Sans } from "next/font/google";
 import FormatsSection from "@/components/FormatsSection";
+import Link from "next/dist/client/link";
 // import { FutureTasksSection } from "@/components/FutureTasksSection";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -506,8 +507,8 @@ export default function Home() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           >
-            <a
-              href="#"
+            <Link
+              href="https://apps.apple.com/de/app/frapic/id6778465385"
               className="flex items-center gap-4 pl-5 pr-8 py-4 bg-white rounded-2xl hover:bg-white/90 transition-all shadow-lg w-56"
             >
               <svg viewBox="0 0 24 24" className="w-8 h-8 fill-black shrink-0">
@@ -517,7 +518,7 @@ export default function Home() {
                 <p className={`text-black/50 text-[10px] leading-tight ${openSans.className}`}>{t.download.iosPrefix}</p>
                 <p className={`text-black text-base font-bold leading-tight ${openSans.className}`}>{t.download.iosStore}</p>
               </div>
-            </a>
+            </Link>
             {/* <a
               href="#"
               className={`flex items-center gap-4 pl-5 pr-8 py-4 bg-white rounded-2xl hover:bg-white/90 transition-all shadow-lg w-56 ${openSans.className}`}
