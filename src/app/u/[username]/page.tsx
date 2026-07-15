@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getPublicProfile } from "@/lib/getPublicProfile";
 
 // Not part of the main marketing site nav — a narrow-purpose landing page that
@@ -78,20 +77,24 @@ export default async function PublicProfilePage({ params }: PageProps) {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 w-full max-w-xs">
+                {/* Plain <a>, not next/link: Link is built for internal app routing and can
+                    swallow/mishandle custom-scheme hrefs like frapicexpo:// (this was a real
+                    bug — Open in Frapic did nothing). A normal anchor lets the browser handle
+                    the custom scheme itself. */}
                 {profile && (
-                    <Link
+                    <a
                         href={appLink}
                         className="px-6 py-3 rounded-xl bg-white text-black font-semibold transition-colors hover:bg-white/90"
                     >
                         Open in Frapic
-                    </Link>
+                    </a>
                 )}
-                <Link
+                <a
                     href={APP_STORE_URL}
                     className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 transition-colors hover:bg-white/10"
                 >
                     Get Frapic on the App Store
-                </Link>
+                </a>
             </div>
         </main>
     );

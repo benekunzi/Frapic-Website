@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.Frapic.Frapic",
+      "sha256_cert_fingerprints": [
+        "F6:FF:0C:9B:78:5F:E0:02:B6:E0:2E:CE:71:93:E8:C7:16:8F:5E:18:B7:3C:FF:76:F2:87:DD:BD:F9:69:38:84"
+      ]
+    }
+  }
+]
