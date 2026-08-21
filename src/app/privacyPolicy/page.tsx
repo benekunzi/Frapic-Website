@@ -1,11 +1,10 @@
-
-import React from 'react';
-import PrivacyPolicy from '@/components/PrivacyPolicy';
+import React from "react";
+import PrivacyPolicy from "@/components/PrivacyPolicy";
 
 export default function Page() {
-    return (
-        <main className="min-h-screen bg-[#0A0A0A] pt-32 pb-20">
-            <PrivacyPolicy />
-        </main>
-    );
+  return (
+    <main className="min-h-screen bg-white text-black pt-32 pb-20">
+      <PrivacyPolicy />
+    </main>
+  );
 }

@@ -1,24 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0f172a;
-  /* Navy */
   --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-muted: #f1f5f9;
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --color-foreground: #16110e;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette */
+  --color-peach: #ffcbb8;
+  --color-coral: #ff8b77;
+  --color-rose: #f2617e;
+  --color-accent: #e94e34;
+  --color-ink: #16110e;
+  --color-cream: #fff6f0;
+
+  /* Neutral scale used across cards, borders and body copy */
+  --color-line-50: #fafafa;
+  --color-line-100: #f4f4f4;
+  --color-line-300: #d6d6d6;
+  --color-line-400: #b0b0b0;
+  --color-line-500: #8a8a8a;
+  --color-line-600: #666666;
+  --color-line-700: #4a4a4a;
+  --color-line-900: #171717;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0A0A0A;
-    --foreground: #f8fafc;
-  }
+  --foreground: #16110e;
 }
 
 body {
@@ -36,16 +44,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-@keyframes floatBob {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
 }

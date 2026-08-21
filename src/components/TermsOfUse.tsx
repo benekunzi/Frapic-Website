@@ -1,5 +1,5 @@
-import { Open_Sans } from 'next/font/google';
-import React from 'react';
+import { Open_Sans } from "next/font/google";
+import React from "react";
 
 const termsOfUseText = `AGREEMENT TO OUR LEGAL TERMS
 
@@ -203,7 +203,7 @@ You can contact us by email at info@frapic.de.`;
 const openSans = Open_Sans({ weight: ["500"], subsets: ["latin"] });
 
 export default function TermsOfUse() {
-  const lines = termsOfUseText.split('\n');
+  const lines = termsOfUseText.split("\n");
   const content: React.ReactNode[] = [];
   let currentListItems: string[] = [];
   let key = 0;
@@ -215,13 +215,15 @@ export default function TermsOfUse() {
         {currentListItems.map((item) => (
           <li key={`item-${key++}`}>{item}</li>
         ))}
-      </ul>
+      </ul>,
     );
     currentListItems = [];
   };
 
   const isSectionHeading = (line: string) =>
-    /^\d+\.\s/.test(line) || line === 'TABLE OF CONTENTS' || line === 'AGREEMENT TO OUR LEGAL TERMS';
+    /^\d+\.\s/.test(line) ||
+    line === "TABLE OF CONTENTS" ||
+    line === "AGREEMENT TO OUR LEGAL TERMS";
 
   for (const rawLine of lines) {
     const line = rawLine.trim();
@@ -231,7 +233,7 @@ export default function TermsOfUse() {
       continue;
     }
 
-    if (line.startsWith('- ')) {
+    if (line.startsWith("- ")) {
       currentListItems.push(line.slice(2));
       continue;
     }
@@ -242,7 +244,7 @@ export default function TermsOfUse() {
       content.push(
         <h3 key={`h3-${key++}`} className="text-lg mt-6">
           {line}
-        </h3>
+        </h3>,
       );
       continue;
     }
@@ -250,15 +252,15 @@ export default function TermsOfUse() {
     content.push(
       <p key={`p-${key++}`} className="leading-7">
         {line}
-      </p>
+      </p>,
     );
   }
 
   flushList();
 
   return (
-    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-gray-300">
-      <h2 className="text-2xl  text-white">TERMS OF USE</h2>
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-black">
+      <h2 className="text-2xl  text-black">TERMS OF USE</h2>
       <div className={`space-y-3 ${openSans.className}`}>{content}</div>
     </section>
   );

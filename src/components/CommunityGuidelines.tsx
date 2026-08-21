@@ -2,7 +2,12 @@
 
 import { useMemo } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { Open_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  weight: ["500", "600", "700", "800"],
+  subsets: ["latin"],
+});
 
 type SupportedLanguage = "en" | "de" | "es" | "fr";
 
@@ -552,52 +557,59 @@ const TRANSLATIONS: Record<SupportedLanguage, Translation> = {
   },
 };
 
-const openSans = Open_Sans({ weight: ["500"], subsets: ["latin"] });
-
 export default function CommunityGuidelines() {
   const { language } = useLanguage();
   const t = useMemo(() => TRANSLATIONS[language as SupportedLanguage] || TRANSLATIONS.en, [language]);
 
   return (
-    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-0 text-gray-300">
-      <div className="space-y-4 mb-10">
-        <h1 className="text-3xl sm:text-4xl  tracking-tight text-white">{t.title}</h1>
-        <p className="text-gray-400 max-w-3xl">{t.subtitle}</p>
-        <p className="text-sm text-gray-500">{t.lastUpdated}</p>
-      </div>
+    <main className={`bg-white text-[#16110e] ${plusJakarta.className}`}>
+      <section className="flex flex-col items-center gap-4 bg-white px-4 pt-36 pb-14 text-center sm:px-6 md:pt-48 md:pb-20 lg:pt-[263px]">
+        <h1 className="max-w-[820px] text-4xl font-extrabold leading-[1.12] sm:text-5xl md:text-6xl lg:text-[56px]">
+          {t.title}
+        </h1>
+        <p className="max-w-[700px] text-base leading-[1.6] text-[#666666] sm:text-lg md:text-xl">
+          {t.subtitle}
+        </p>
+        <p className="text-[13px] text-[#8a8a8a]">{t.lastUpdated}</p>
+      </section>
 
-      <div className="space-y-6">
-        {t.sections.map((section) => (
-          <article key={section.title} className="rounded-2xl border border-white/10 bg-[#0c1218]/50 p-6">
-            <h2 className="text-xl mb-4 text-white">{section.title}</h2>
+      <section className="flex w-full flex-col items-center bg-white px-4 pb-20 sm:px-6 md:pb-24">
+        <div className="flex w-full max-w-[1048px] flex-col gap-4">
+          {t.sections.map((section) => (
+            <article
+              key={section.title}
+              className="w-full rounded-[20px] border border-[#D6D6D6] bg-white p-7 shadow-[0_3px_7px_rgba(0,0,0,0.15)]"
+            >
+              <h2 className="mb-4 text-lg font-bold text-[#16110e]">{section.title}</h2>
 
-            {section.paragraphs?.map((paragraph) => (
-              <p key={paragraph} className={`text-gray-100 leading-7 mb-3 ${openSans.className}`}>
-                {paragraph}
-              </p>
-            ))}
+              {section.paragraphs?.map((paragraph) => (
+                <p key={paragraph} className="mb-3 text-base leading-[1.6] text-[#4a4a4a]">
+                  {paragraph}
+                </p>
+              ))}
 
-            {section.groups?.map((group) => (
-              <div key={group.title} className="mb-5 last:mb-0">
-                <h3 className="text-base text-white mb-2">{group.title}</h3>
-                <ul className={`space-y-2 list-disc pl-5 text-gray-300 ${openSans.className}`}>
-                  {group.bullets.map((item) => (
+              {section.groups?.map((group) => (
+                <div key={group.title} className="mb-5 last:mb-0">
+                  <h3 className="mb-2 text-base font-semibold text-[#16110e]">{group.title}</h3>
+                  <ul className="list-disc space-y-2 pl-5 text-base leading-[1.55] text-[#4a4a4a]">
+                    {group.bullets.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+
+              {section.bullets && (
+                <ul className="list-disc space-y-2 pl-5 text-base leading-[1.55] text-[#4a4a4a]">
+                  {section.bullets.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-              </div>
-            ))}
-
-            {section.bullets && (
-              <ul className={`space-y-2 list-disc pl-5 text-gray-300 ${openSans.className}`}>
-                {section.bullets.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            )}
-          </article>
-        ))}
-      </div>
-    </section>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

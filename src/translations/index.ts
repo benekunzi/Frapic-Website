@@ -1,632 +1,1097 @@
 export const translations = {
-    en: {
-        navbar: {
-            about: "About",
-            faq: "FAQ",
-            guidelines: "Guidelines",
-            instagramImport: "Import Instagram",
-            downloadApp: "Download App",
-        },
-        navItems: {
-            formats: "Formats",
-            journals: "Journals",
-            privacy: "Privacy",
-            independent: "Independent",
-            european: "European",
-        },
-        hero: {
-            title1: "SOCIAL MEDIA",
-            title2: "How it should be",
-            subtitle: "Frapic is the free social media app built exclusively for your close friends. Share memories as photos, stories & journals — private by default, no algorithm, no strangers.",
-        },
-        formats: {
-            title: "All formats you need",
-            slides: [
-                {
-                    name: "Frapic",
-                    description: "Capture your story from front and back. Customize the overlaying image as you want. Visible in feed for 24 hours.",
-                },
-                {
-                    name: "Story",
-                    description: "Share stories in photo or video format that disappear after 24 hours.",
-                },
-                {
-                    name: "Post",
-                    description: "For timeless memories you want to keep on your profile forever.",
-                },
-            ],
-        },
-        journals: {
-            title1: "Shared",
-            title2: "Journals",
-            desc1Title: "Journals",
-            desc1Text: "On each day all of your posts are bundled together into a journal. See all of your memories on a single page. Combine multiple journals into one to have all your memories in one place.",
-            desc2Title: "Shared",
-            desc2Text: "Your friends are always included—visible on the cover and under the images. When a friend tags you, you can easily append their posts to your own, bundling everyone's perspectives together.",
-        },
-        values: [
-            {
-                id: "privacy",
-                title: "Privacy",
-                desc: "Your data is yours. We don't sell your data and posts nor do we apply any algorithms, AI or upload filters to your content. Only you and your friends can see your data, nobody else.",
-            },
-            {
-                id: "independent",
-                title: "Independent",
-                desc: "We are a small team from Germany owned by nobody. We don't have any investors or advertisers. We are funded by our users, which means our only incentive is to build a product you love. All decisions are made by us, not investors.",
-            },
-            {
-                id: "european",
-                title: "European Solution",
-                desc: "Built and hosted fully within the EU, Germany. We comply with the strictest data protection laws in the world by default, not as an afterthought.",
-            },
-        ],
-        manifesto: {
-            tag: "The Frapic Difference",
-            headline1: "Social media,",
-            headline2: "redefined for friends.",
-            description: "Frapic is built from the ground up to be different. No feed designed to keep you scrolling. No strangers deciding what goes viral. No algorithm optimizing for engagement over real connection.",
-            noItems: [
-                "No algorithm",
-                "No endless feed",
-                "No public profiles",
-                "No data selling",
-                "No doomscrolling",
-                "No upload filters",
-            ],
-        },
-        download: {
-            tag: "Available Now",
-            title: "Get Frapic",
-            subtitle: "Free. Private. Available for iOS and Android.",
-            iosPrefix: "Download on the",
-            iosStore: "App Store",
-            androidPrefix: "Get it on",
-            androidStore: "Google Play",
-            comingSoon: "Download links coming soon",
-        },
-        faq: {
-            title: "Frequently Asked Questions",
-            questions: [
-                { q: "Why a new social media platform?", a: "Social media has become solely about media. The social aspect has been lost, focusing only on clicks, likes, and followers. Algorithms are the main drivers of content and user experience, while the social and friendship aspect has been left behind.\n\nFrapic is a social media platform that puts the social aspect back into social media.\n\nWe believe in a social platform that only exists for friends—private by default, with every feature focused on data privacy, no algorithm, and no doom-scrolling. A platform where the sole focus is on your friends, not your likes and followers." },
-                { q: "Who owns Frapic?", a: "Frapic is exclusively owned by its founder (Benedict Kunzmann). There are no investors and no other owners.\n\nThis decision was made to ensure that the platform stays true to its values and mission—ensuring absolute data privacy forever. The goal is not to build a billion-dollar company, but to build a platform that values its users and their privacy." },
-                { q: "Does Frapic impose any censorship?", a: "Frapic is committed to protecting freedom of expression—but with that freedom comes responsibility.\n\nWe do not allow content that incites violence, hatred, pornographic content, racism, or discrimination, nor do we permit harassment or the spread of dangerous misinformation." },
-                { q: "Does Frapic share the data with anybody?", a: "No. We do not share any data with third parties. Your data belongs solely to you and your friends." },
-                { q: "How does Frapic create the feed?", a: "The feed is a chronological feed of your friends' posts. Posts appear exactly when they’re shared by the people you follow—no reshuffling, no manipulation." },
-                { q: "Where does Frapic store my data?", a: "Currently, Frapic' core servers are hosted in Frankfurt, Germany—chosen for its reputation for strict data protection and privacy standards. It’s a location that reflects our commitment to performance, reliability, and user rights.\n\nFor worldwide speed and availability, we also make use of global CDNs and edge locations to ensure content loads quickly wherever our users are." },
-                { q: "Will there be ads?", a: "Yes. Frapic will place advertisements in the feed and stories. These are personalized ads provided by Google. The data used for ads is solely gathered by Google, and we do not share any of your private data with ad providers." },
-                { q: "Is Frapic free? How does it generate revenue?", a: "Yes. Frapic is a free service. We generate revenue through advertisements. In the future, we may optionally add a subscription model to remove ads." },
-                { q: "How secure is my data?", a: "We take data security seriously. All your data is only visible to you and your accepted friends. Nobody else can see your data. We also encrypt all data at rest and in transit to prevent unauthorized access." },
-                { q: "How can I delete my account?", a: "You can delete your account at any time by going to the settings page and clicking the 'Delete Account' button. Your account and all associated data will be permanently and irreversibly removed." }
-            ]
-        },
-        about: {
-            heroTitle: "ABOUT Frapic",
-            heroSubtitle1: "We are creating a social media platform for users, not for advertisers and investors.",
-            heroSubtitle2: "A platform to never miss anything from your friends, without getting distracted.",
-            visionTitle1: "Our",
-            visionTitle2: "Vision",
-            visionText1: "Today, social media has lost its value as a social platform. Following your own friends and seeing only their posts has long faded into the background. Instead, users are flooded with endlessly generated content so they stay on the platform as long as possible and generate as much money as possible. Privacy plays no role—every post and comment is analyzed, as is every interaction the user has with the app. Consumption is the focus, not staying updated with friends. \"Social\" media became just media.",
-            visionText2: "We want to bring back the original social media—a platform solely to connect and stay updated with your friends, without the danger of being overwhelmed by random news or falling into doomscrolling and brainrot with a single swipe. A platform where you can also switch off without missing anything important. Privacy plays the most important role here. We don't analyze posts, comments, or usage behavior within the app. We want to achieve this without investors, because big profits are not the priority here, and so every decision is always made by us alone.",
-            teamTitle1: "The",
-            teamTitle2: "Team",
-            founderName: "Benedict Kunzmann",
-            founderRole: "Founder",
-            founderBio1: "Hey! I'm Bene, I'm 26 years old and currently living in Leipzig. I started building Frapic because I was fed up with all the social media platforms that are only designed for profit and clicks. A platform where you can simply share your memories without getting doomscrolled and having all your data sold. Just classic social media.",
-            founderBio2: "The team currently consists of two people: I take care of all the programming of the app and everything that goes on behind the scenes, and a designer who handles the design of the app and website.",
-        },
-        formatsSection: {
-            title1: "All formats,",
-            title2: "you need.",
-            subtitle: "One moment, three ways to share it — from the dual-camera Frapic to fleeting stories and the memory that lasts forever.",
-            storyName: "Story",
-            storyDesc: "Share moments in photo or video format that disappear after 24 hours.",
-            frapicName: "Frapic",
-            frapicDesc: "One moment from both perspectives — front and back camera in one shot. Visible in your story for 24 hours.",
-            postName: "Post",
-            postDesc: "For timeless memories you want to keep on your profile forever.",
-        },
-        footer: {
-            description: "The free social media app built exclusively for close friends. Share photos, stories & journals — private by default, no algorithm, no data selling.",
-            productTitle: "Product",
-            download: "Download",
-            features: "Features",
-            companyTitle: "Company",
-            aboutUs: "About Us",
-            contact: "Contact",
-            privacyPolicy: "Privacy Policy",
-            termsOfService: "Terms of Service",
-            copyright: "Frapic App Inc. All rights reserved.",
-        },
-        instagramImportPage: {
-            title: "Import Instagram",
-            subtitle: "Bring your existing Instagram memories into Frapic in a few quick steps.",
-            whyTitle: "Why We Offer This",
-            whyItems: [
-                "We don't want you to start from zero. Keep all your existing memories and share them on a more protected platform.",
-                "Your memories stay together in one place, even if they were first shared on Instagram.",
-                "Imported files are private by default in Frapic. Only you can see them until you publish them.",
-                "Your archive is processed on your device and then uploaded securely.",
-                "Importing does not delete anything from your Instagram account.",
-            ],
-            stepsTitle: "Short Tutorial",
-            steps: [
-                {
-                    title: "1. Open Instagram settings",
-                    description: "Go to your profile, open the menu, and enter the Account Center.",
-                },
-                {
-                    title: "2. Request your export",
-                    description: "Open 'Your information and permissions' and choose 'Download your information'.",
-                },
-                {
-                    title: "3. Start export to device",
-                    description: "Create export, select date range and media quality, then start the export.",
-                },
-                {
-                    title: "4. Import the ZIP in Frapic",
-                    description: "When Instagram emails your download link, save the ZIP and upload it in the Frapic import screen.",
-                },
-            ],
-            noteTitle: "Good to know",
-            noteText: "Instagram usually sends the export link within a few minutes, but it can take longer for larger accounts.",
-            waitTitle: "Import Availability",
-            waitText: "The Instagram import feature becomes available two weeks after you create your account. This helps us manage server costs and ensure a smooth experience for everyone.",
-        },
-        deleteAccountPage: {
-            title: "Delete Account",
-            subtitle: "You can permanently delete your Frapic account and all associated data directly from within the app.",
-            stepsTitle: "How to Delete Your Account",
-            steps: [
-                {
-                    title: "1. Open your Profile",
-                    description: "Tap the profile icon in the bottom navigation bar to open your profile page.",
-                },
-                {
-                    title: "2. Open Settings",
-                    description: "Tap the settings icon in the top right corner of your profile page.",
-                },
-                {
-                    title: "3. Scroll down to 'Delete Account'",
-                    description: "Scroll to the bottom of the settings page until you see the 'Delete Account' option.",
-                },
-                {
-                    title: "4. Confirm deletion",
-                    description: "Tap 'Delete Account' and confirm in the dialog that appears. Your account will be permanently deleted.",
-                },
-            ],
-            dataTitle: "What Data Gets Deleted",
-            dataItems: [
-                "Your profile information (name, username, profile picture, bio)",
-                "All your posts, stories, and Frapics",
-                "All your journal entries and journal media",
-                "All your comments and reactions",
-                "All your friendships and friend requests",
-                "Your account credentials and login data",
-            ],
-            warningTitle: "Important",
-            warningText: "Account deletion is permanent and irreversible. Once deleted, your account and all associated data cannot be recovered. There is no retention period — all data is removed immediately upon deletion.",
-        },
+  en: {
+    navbar: {
+      about: "About",
+      faq: "FAQ",
+      guidelines: "Guidelines",
+      instagramImport: "Import Instagram",
+      downloadApp: "Download App",
+      donate: "Support us",
     },
-    de: {
-        navbar: {
-            about: "Über uns",
-            faq: "FAQ",
-            guidelines: "Richtlinien",
-            instagramImport: "Instagram importieren",
-            downloadApp: "App Herunterladen",
-        },
-        navItems: {
-            formats: "Formate",
-            journals: "Journals",
-            privacy: "Datenschutz",
-            independent: "Independent",
-            european: "Europäisch",
-        },
-        hero: {
-            title1: "SOCIAL MEDIA",
-            title2: "Wie es sein sollte",
-            subtitle: "Frapic ist die kostenlose Social-Media-App nur für deine engsten Freunde. Teile Erinnerungen als Fotos, Stories & Journals – standardmäßig privat, kein Algorithmus, keine öffentlichen Profile.",
-        },
-        formats: {
-            title: "Alle Formate, die du brauchst",
-            slides: [
-                {
-                    name: "Frapic",
-                    description: "Erfasse deine Geschichte aus beiden Kamera-Perspektiven. Passe das überlagernde Bild nach deinen Wünschen an. Im Feed für 24 Stunden sichtbar.",
-                },
-                {
-                    name: "Story",
-                    description: "Teile Geschichten im Foto- oder Videoformat, die nach 24 Stunden verschwinden.",
-                },
-                {
-                    name: "Post",
-                    description: "Für zeitlose Erinnerungen, die du für immer auf deinem Profil behalten möchtest.",
-                },
-            ],
-        },
-        journals: {
-            title1: "Geteilte",
-            title2: "Journals",
-            desc1Title: "Journals",
-            desc1Text: "An jedem Tag werden alle deine Posts in einem Journal gebündelt. Sieh dir alle deine Erinnerungen auf einer einzigen Seite an. Kombiniere mehrere Journals, um alle Erinnerungen an einem Ort zu haben.",
-            desc2Title: "Geteilt",
-            desc2Text: "Deine Freunde sind immer dabei - sichtbar auf dem Cover und unter den Bildern. Wenn ein Freund dich markiert, kannst du seine Posts ganz einfach an deine anhängen und so alle Perspektiven bündeln.",
-        },
-        values: [
-            {
-                id: "privacy",
-                title: "Datenschutz",
-                desc: "Deine Daten gehören dir. Wir verkaufen deine Daten und Posts nicht und wenden keine Algorithmen, KI oder Upload-Filter auf deine Inhalte an. Nur du und deine Freunde können deine Daten sehen, sonst niemand.",
-            },
-            {
-                id: "independent",
-                title: "Independent",
-                desc: "Wir sind ein kleines Team aus Deutschland, das niemandem gehört. Wir haben keine Investoren oder Werbekunden. Wir werden von unseren Nutzern finanziert, was bedeutet, dass unser einziges Ziel darin besteht, ein Produkt zu bauen, das du liebst. Alle Entscheidungen werden von uns, nicht von Investoren, getroffen.",
-            },
-            {
-                id: "european",
-                title: "Europäische Lösung",
-                desc: "Komplett in der EU, Deutschland entwickelt und gehostet. Wir halten uns standardmäßig an die strengsten Datenschutzgesetze der Welt, nicht erst im Nachhinein.",
-            },
-        ],
-        manifesto: {
-            tag: "Der Frapic-Unterschied",
-            headline1: "Social Media,",
-            headline2: "neu gedacht für Freunde.",
-            description: "Frapic wurde von Grund auf anders konzipiert. Kein Feed, der dich zum endlosen Scrollen verleitet. Kein Algorithmus, der Engagement über echte Verbindungen stellt.",
-            noItems: [
-                "Kein Algorithmus",
-                "Kein endloser Feed",
-                "Keine Öffentlichen Profile",
-                "Kein Datenverkauf",
-                "Kein Doomscrolling",
-                "Keine Upload-Filter",
-            ],
-        },
-        download: {
-            tag: "Jetzt verfügbar",
-            title: "Frapic laden",
-            subtitle: "Kostenlos. Privat. Für iOS und Android.",
-            iosPrefix: "Laden im",
-            iosStore: "App Store",
-            androidPrefix: "Jetzt bei",
-            androidStore: "Google Play",
-            comingSoon: "Download-Links kommen bald",
-        },
-        faq: {
-            title: "Häufig gestellte Fragen",
-            questions: [
-                { q: "Warum eine neue Social-Media-Plattform?", a: "Social Media besteht fast nur noch aus 'Media'. Der soziale Aspekt ist verloren gegangen und der Fokus liegt nur noch auf Klicks, Likes und Followern. Algorithmen sind zum Haupttreiber für Inhalte geworden, während der soziale Aspekt und echte Freundschaften auf der Strecke blieben.\n\nFrapic ist eine Plattform, die das Soziale wieder in den Mittelpunkt von Social Media rückt.\n\nWir glauben an eine soziale Plattform, die nur für Freunde existiert – standardmäßig privat, mit absolutem Fokus auf Datenschutz, ohne Algorithmus und ohne Doom-Scrolling. Eine Plattform, deren einziger Fokus auf deinen Freunden liegt und nicht auf deinen Likes oder Followern." },
-                { q: "Wem gehört Frapic?", a: "Frapic gehört ausschließlich seinem Gründer (Benedict Kunzmann). Es gibt keine Investoren und keine anderen Eigentümer.\n\nDiese Entscheidung wurde getroffen, um sicherzustellen, dass die Plattform ihren Werten und ihrer Mission treu bleibt – und absolute Datensicherheit für immer garantiert. Das Ziel ist nicht, ein Milliardenunternehmen aufzubauen, sondern eine Plattform, die ihre Nutzer und deren Privatsphäre wertschätzt." },
-                { q: "Gibt es bei Frapic Zensur?", a: "Frapic bekennt sich zum Schutz der Meinungsfreiheit – doch mit dieser Freiheit geht Verantwortung einher.\n\nWir erlauben keine Inhalte, die zu Gewalt, Hass, rassistischer Diskriminierung oder pornografischen Inhalten anstiften, und wir dulden auch keine Belästigung oder die Verbreitung gefährlicher Fehlinformationen." },
-                { q: "Teilt Frapic Daten mit Dritten?", a: "Nein. Wir teilen keinerlei Daten mit Dritten. Deine Daten gehören ausschließlich dir und deinen Freunden." },
-                { q: "Wie wird der Feed bei Frapic erstellt?", a: "Der Feed ist ein rein chronologischer Feed der Beiträge deiner Freunde. Beiträge erscheinen genau in dem Moment, in dem sie von den Personen, denen du folgst, geteilt werden – keine Umordnung, keine Manipulation." },
-                { q: "Wo speichert Frapic meine Daten?", a: "Derzeit werden die Kernserver von Frapic in Frankfurt am Main, Deutschland, gehostet – ausgewählt wegen des strengen Datenschutzes und der hohen Privatsphärenstandards. Dieser Standort spiegelt unser Engagement für Leistung, Zuverlässigkeit und Nutzerrechte wider.\n\nFür weltweite Geschwindigkeit und Verfügbarkeit nutzen wir zudem globale CDNs und Edge-Standorte, um sicherzustellen, dass Inhalte überall auf der Welt schnell laden." },
-                { q: "Wird es Werbung geben?", a: "Ja. Frapic wird Werbung im Feed und in den Stories integrieren. Diese Werbeanzeigen werden über Google ausgespielt. Die für die Werbung genutzten Daten stammen ausschließlich von Google, und wir geben keinerlei private Daten an Werbeanbieter weiter." },
-                { q: "Ist Frapic kostenlos? Wie generiert es Einnahmen?", a: "Ja. Frapic ist ein kostenloser Dienst. Wir generieren Einnahmen durch Werbung. In der Zukunft werden wir möglicherweise ein optionales Abonnement-Modell einführen, mit dem die Werbung entfernt werden kann." },
-                { q: "Wie sicher sind meine Daten?", a: "Wir nehmen Datensicherheit sehr ernst. All deine Daten sind nur für dich und deine akzeptierten Freunde sichtbar. Niemand sonst kann deine Daten sehen. Außerdem verschlüsseln wir alle Daten sowohl im Ruhezustand als auch bei der Übertragung, um unbefugten Zugriff zu verhindern." },
-                { q: "Wie kann ich mein Konto löschen?", a: "Du kannst dein Konto jederzeit löschen, indem du in die Einstellungen gehst und auf den Button 'Konto löschen' klickst. Dein Konto und alle damit verbundenen Daten werden dadurch unwiderruflich und dauerhaft entfernt." }
-            ]
-        },
-        about: {
-            heroTitle: "Über Frapic",
-            heroSubtitle1: "Wir kreieren eine Social Media Platform für User*innen und nicht für Werbetreibende und Investoren.",
-            heroSubtitle2: "Eine Platform um nichts bei seinen Freund*innen zu verpassen, ohne abgelenkt zu werden.",
-            visionTitle1: "Unsere",
-            visionTitle2: "Vision",
-            visionText1: "Heutzutage hat Social Media ihren Wert als soziale Plattform verloren. Den eigenen Freund*innen zu folgen und nur deren Posts zu sehen ist schon längst im Hintergrund geraten. Stattdessen werden User*innen mit endlos viel generierten Content geflutet, damit diese so lange wie möglich auf der Platform bleiben und so viel Geld wie möglich generieren. Die Privatsphäre spielt dabei keine Rolle, jegliche Posts und Kommentare werden analysiert sowie jede Interaction vom User mit der App. Konsum steht im Fokus, nicht das Updaten unter Freund*innen. \"Social\" Media wurde zu Media.",
-            visionText2: "Wir wollen das ursprüngliche Social Media wieder zurückbringen, eine Plattform nur um sich mit seinen Freund*innen zu connecten und zu updaten ohne die Gefahr von irgendwelchen News überwältigt zu werden oder durch einen Swipe dem Doomscrolling und Brainrot zu verfallen. Eine Platform um auch mal abschalten zu können ohne was wichtiges zu verfassen. Dabei spielt die Privatsphäre die wichtigste Rolle. Wir analysieren keine Posts und Kommentare oder das Nutzungsverhalten innerhalb von der App. Wir wollen das ohne Investoren schaffen, weil hier große Gewinnen nicht im Mittelpunkt stehen, und so die Entscheidung immer nur von uns getroffen wird.",
-            teamTitle1: "Das",
-            teamTitle2: "Team",
-            founderName: "Benedict Kunzmann",
-            founderRole: "Gründer",
-            founderBio1: "Hey! Ich bin Bene, bin 26 Jahre alt und lebe derzeit in Leipzig. Ich hab Frapic angefangen zu programmieren, weil ich keine Lust mehr auf die ganzen Social-Media Platformen hatte, die nur noch auf Profit und Clicks ausgelegt sind. Eine Platform wo man einfach seine Erinnerungen teilen kann, ohne das man direkt Doomscrolled und seine ganzen Daten verkauft. Halt so ein klassisches Social-Media.",
-            founderBio2: "Das Team besteht zurzeit aus zwei Leuten: Ich kümmere mich um die ganze Programmierung der App und alles was im Hintergrund noch so abgeht und einer Designerin, die sich um das Design der App und Website kümmert.",
-        },
-        formatsSection: {
-            title1: "Alle Formate,",
-            title2: "die du brauchst.",
-            subtitle: "Ein Moment, drei Wege ihn zu teilen — vom Dual-Kamera-Frapic über flüchtige Storys bis zur Erinnerung, die für immer bleibt.",
-            storyName: "Story",
-            storyDesc: "Teile Momente im Foto- oder Videoformat, die nach 24 Stunden verschwinden.",
-            frapicName: "Frapic",
-            frapicDesc: "Ein Moment aus beiden Perspektiven — Vorder- und Rückkamera in einer Aufnahme. 24 Stunden in der Story sichtbar.",
-            postName: "Post",
-            postDesc: "Für zeitlose Erinnerungen, die du für immer auf deinem Profil behältst.",
-        },
-        footer: {
-            description: "Die kostenlose Social-Media-App exklusiv für deine engsten Freunde. Teile Fotos, Stories & Journals — standardmäßig privat, kein Algorithmus, kein Datenverkauf.",
-            productTitle: "Produkt",
-            download: "Herunterladen",
-            features: "Funktionen",
-            companyTitle: "Unternehmen",
-            aboutUs: "Über uns",
-            contact: "Kontakt",
-            privacyPolicy: "Datenschutzerklärung",
-            termsOfService: "Nutzungsbedingungen",
-            copyright: "Frapic App Inc. Alle Rechte vorbehalten.",
-        },
-        instagramImportPage: {
-            title: "Instagram importieren",
-            subtitle: "Hole deine bestehenden Instagram-Erinnerungen in wenigen Schritten zu Frapic.",
-            whyTitle: "Warum wir das anbieten",
-            whyItems: [
-                "Wir wollen nicht, dass du bei null startest. Nimm all deine bestehenden Erinnerungen mit und teile sie auf einer besser geschützten Plattform.",
-                "Deine Erinnerungen bleiben an einem Ort, auch wenn sie zuerst auf Instagram geteilt wurden.",
-                "Importierte Inhalte sind in Frapic standardmäßig privat. Nur du siehst sie, bis du sie veröffentlichst.",
-                "Dein Archiv wird auf deinem Gerät verarbeitet und anschließend sicher hochgeladen.",
-                "Durch den Import wird nichts bei Instagram gelöscht.",
-            ],
-            stepsTitle: "Kurzanleitung",
-            steps: [
-                {
-                    title: "1. Instagram-Einstellungen öffnen",
-                    description: "Gehe auf dein Profil, öffne das Menü und dann die Kontoübersicht.",
-                },
-                {
-                    title: "2. Export anfragen",
-                    description: "Öffne 'Deine Informationen und Berechtigungen' und wähle 'Datein exportieren'.",
-                },
-                {
-                    title: "3. Export auf Gerät starten",
-                    description: "Erstelle den Export, wähle Zeitraum und Medienqualität und starte den Export.",
-                },
-                {
-                    title: "4. ZIP in Frapic importieren",
-                    description: "Sobald du den Download-Link per E-Mail bekommst, lade die ZIP herunter und importiere sie im Frapic-Importscreen.",
-                },
-            ],
-            noteTitle: "Gut zu wissen",
-            noteText: "Der Download-Link kommt oft nach wenigen Minuten, kann bei großen Konten aber länger dauern.",
-            waitTitle: "Verfügbarkeit des Imports",
-            waitText: "Die Instagram-Import-Funktion wird zwei Wochen nach der Erstellung deines Kontos freigeschaltet. So können wir die Serverkosten im Griff behalten und ein reibungsloses Erlebnis für alle sicherstellen.",
-        },
-        deleteAccountPage: {
-            title: "Konto löschen",
-            subtitle: "Du kannst dein Frapic-Konto und alle zugehörigen Daten dauerhaft direkt in der App löschen.",
-            stepsTitle: "So löschst du dein Konto",
-            steps: [
-                {
-                    title: "1. Profil öffnen",
-                    description: "Tippe auf das Profil-Symbol in der unteren Navigationsleiste, um dein Profil zu öffnen.",
-                },
-                {
-                    title: "2. Einstellungen öffnen",
-                    description: "Tippe auf das Einstellungs-Symbol oben rechts auf deiner Profilseite.",
-                },
-                {
-                    title: "3. Zu 'Konto löschen' scrollen",
-                    description: "Scrolle auf der Einstellungsseite nach unten, bis du die Option 'Konto löschen' siehst.",
-                },
-                {
-                    title: "4. Löschung bestätigen",
-                    description: "Tippe auf 'Konto löschen' und bestätige im erscheinenden Dialog. Dein Konto wird dauerhaft gelöscht.",
-                },
-            ],
-            dataTitle: "Welche Daten gelöscht werden",
-            dataItems: [
-                "Deine Profilinformationen (Name, Benutzername, Profilbild, Bio)",
-                "Alle deine Posts, Stories und Frapics",
-                "Alle deine Journal-Einträge und Journal-Medien",
-                "Alle deine Kommentare und Reaktionen",
-                "Alle deine Freundschaften und Freundschaftsanfragen",
-                "Deine Zugangsdaten und Login-Informationen",
-            ],
-            warningTitle: "Wichtiger Hinweis",
-            warningText: "Die Kontolöschung ist dauerhaft und unwiderruflich. Nach der Löschung können dein Konto und alle zugehörigen Daten nicht wiederhergestellt werden. Es gibt keine Aufbewahrungsfrist – alle Daten werden sofort bei der Löschung entfernt.",
-        },
+    navItems: {
+      formats: "Formats",
+      journals: "Journals",
+      privacy: "Privacy",
+      independent: "Independent",
+      european: "European",
     },
-    es: {
-        navbar: {
-            about: "Sobre nosotros",
-            faq: "Preguntas frecuentes",
-            guidelines: "Directrices",
-            instagramImport: "Importar Instagram",
-            downloadApp: "Descargar App",
-        },
-        navItems: {
-            formats: "Formatos",
-            journals: "Diarios",
-            privacy: "Privacidad",
-            independent: "Independiente",
-            european: "Europeo",
-        },
-        hero: {
-            title1: "Redes Sociales",
-            title2: "Como deberían ser",
-            subtitle: "Frapic es la app gratuita de redes sociales hecha exclusivamente para tus amigos cercanos. Comparte recuerdos como fotos, historias y diarios — privado por defecto, sin algoritmo, sin extraños.",
-        },
-        formats: {
-            title: "Todos los formatos que necesitas",
-            slides: [
-                {
-                    name: "Frapic",
-                    description: "Captura tu historia desde la cámara frontal y trasera. Personaliza la imagen superpuesta como quieras. Visible en el feed durante 24 horas.",
-                },
-                {
-                    name: "Historia",
-                    description: "Comparte historias en formato foto o video que desaparecen después de 24 horas.",
-                },
-                {
-                    name: "Publicación",
-                    description: "Para recuerdos atemporales que quieres conservar en tu perfil para siempre.",
-                },
-            ],
-        },
-        journals: {
-            title1: "Diarios",
-            title2: "Compartidos",
-            desc1Title: "Diarios",
-            desc1Text: "Cada día, todas tus publicaciones se agrupan en un diario. Mira todos tus recuerdos en una sola página. Combina múltiples diarios en uno solo para tener todos tus recuerdos en un solo lugar.",
-            desc2Title: "Compartido",
-            desc2Text: "Tus amigos siempre están incluidos: visibles en la portada y debajo de las imágenes. Cuando un amigo te etiqueta, puedes agregar fácilmente sus publicaciones a las tuyas, combinando las perspectivas de todos.",
-        },
-        values: [
-            {
-                id: "privacy",
-                title: "Privacidad",
-                desc: "Tus datos son tuyos. No vendemos tus datos ni tus publicaciones, ni aplicamos algoritmos, IA o filtros de carga a tu contenido. Solo tú y tus amigos pueden ver tus datos, nadie más.",
-            },
-            {
-                id: "independent",
-                title: "Independiente",
-                desc: "Somos un pequeño equipo de Alemania que no pertenece a nadie. No tenemos inversores ni anunciantes. Nos financiamos con nuestros usuarios, lo que significa que nuestro único incentivo es construir un producto que ames. Todas las decisiones las tomamos nosotros, no los inversores.",
-            },
-            {
-                id: "european",
-                title: "Solución Europea",
-                desc: "Desarrollado y alojado completamente en la UE, Alemania. Cumplimos con las leyes de protección de datos más estrictas del mundo por defecto, no como una ocurrencia tardía.",
-            },
-        ],
-        manifesto: {
-            tag: "La diferencia Frapic",
-            headline1: "Redes sociales,",
-            headline2: "redefinidas para amigos.",
-            description: "Frapic está construido desde cero para ser diferente. Sin feed diseñado para que sigas scrolleando. Sin extraños decidiendo qué se vuelve viral. Sin algoritmos que priorizan el engagement sobre la conexión real.",
-            noItems: [
-                "Sin algoritmo",
-                "Sin feed interminable",
-                "Sin perfiles públicos",
-                "Sin venta de datos",
-                "Sin doomscrolling",
-                "Sin filtros de subida",
-            ],
-        },
-        download: {
-            tag: "Disponible ahora",
-            title: "Obtén Frapic",
-            subtitle: "Gratis. Privado. Disponible para iOS y Android.",
-            iosPrefix: "Descargar en",
-            iosStore: "App Store",
-            androidPrefix: "Disponible en",
-            androidStore: "Google Play",
-            comingSoon: "Links de descarga próximamente",
-        },
-        faq: {
-            title: "Preguntas Frecuentes",
-            questions: [
-                { q: "¿Por qué una nueva red social?", a: "Las redes sociales se han convertido únicamente en medios. El aspecto social se ha perdido y solo se enfocan en clics, 'me gusta' y seguidores. Los algoritmos son los principales impulsores del contenido y la experiencia del usuario, mientras que el aspecto social y de amistad ha quedado atrás.\n\nFrapic es una plataforma que devuelve el aspecto social a las redes sociales.\n\nCreemos en una plataforma social que solo existe para amigos, privada por defecto, con cada aspecto enfocado en la privacidad de los datos, sin algoritmos y sin 'doom-scrolling'. Una plataforma donde el único enfoque son tus amigos y no tus likes y seguidores." },
-                { q: "¿A quién pertenece Frapic?", a: "Frapic es propiedad exclusiva de su fundador (Benedict Kunzmann). No hay inversores ni otros propietarios.\n\nEsta decisión se tomó para garantizar que la plataforma se mantenga fiel a sus valores y a su misión, garantizando la privacidad absoluta de los datos para siempre. El objetivo no es crear una empresa multimillonaria, sino construir una plataforma que valore a sus usuarios y su privacidad." },
-                { q: "¿Ejerce Frapic algún tipo de censura?", a: "Frapic tiene el compromiso de proteger la libertad de expresión, pero con esa libertad viene la responsabilidad.\n\nNo permitimos contenidos que inciten a la violencia, el odio, contenido pornográfico, racismo o discriminación, ni permitimos el acoso o la difusión de información falsa." },
-                { q: "¿Frapic comparte datos con terceros?", a: "No. No compartimos ningún dato con terceros. Tus datos te pertenecen únicamente a ti y a tus amigos." },
-                { q: "¿Cómo elabora el feed Frapic?", a: "El feed de Frapic es puramente cronológico con las publicaciones de tus amigos. Las publicaciones aparecen exactamente en el orden en que las comparten las personas a las que sigues, sin reordenamientos ni manipulación." },
-                { q: "¿Dónde almacena Frapic mis datos?", a: "Actualmente, los servidores principales de Frapic se alojan en Fráncfort (Alemania), elegidos por su reputación en cuanto a las estrictas normas de protección de datos y privacidad. Es una ubicación que refleja nuestro compromiso con el rendimiento, la fiabilidad y los derechos de los usuarios.\n\nPara conseguir velocidad y disponibilidad en todo el mundo, también utilizamos CDNs globales y ubicaciones edge para garantizar que el contenido se cargue rápidamente en todas partes." },
-                { q: "¿Habrá anuncios publicitarios?", a: "Sí. Frapic incluirá anuncios en el feed y en las historias. Estos anuncios personalizados son proporcionados por Google. Los datos utilizados para los anuncios son recopilados únicamente por Google, nosotros no compartimos tus datos privados con anunciantes." },
-                { q: "Frapic es gratuito? ¿Cómo genera ingresos?", a: "Sí. Frapic es un servicio gratuito. Generamos ingresos a través de la publicidad. Opcionalmente añadiremos un modelo de suscripción en el futuro que eliminará los anuncios." },
-                { q: "¿Qué tan seguros están mis datos?", a: "Nos tomamos la seguridad de los datos muy en serio. Todos tus datos solo son visibles para ti y tus amigos aceptados. Nadie más puede ver tus datos. También encriptamos todos los datos, tanto en reposo como en tránsito, para evitar el acceso no autorizado." },
-                { q: "¿Cómo puedo eliminar mi cuenta?", a: "Puedes eliminar tu cuenta en cualquier momento accediendo a la página de ajustes y haciendo clic en el botón de eliminar cuenta. Tu cuenta y todos los datos asociados se eliminarán de forma permanente y sin posibilidad de recuperación." }
-            ]
-        },
-        about: {
-            heroTitle: "ABOUT Frapic",
-            heroSubtitle1: "Estamos creando una plataforma de redes sociales para los usuarios, no para anunciantes e inversores.",
-            heroSubtitle2: "Una plataforma para no perderte nada de tus amigos, sin distracciones.",
-            visionTitle1: "Nuestra",
-            visionTitle2: "Visión",
-            visionText1: "Hoy en día, las redes sociales han perdido su valor como plataforma social. Seguir a tus propios amigos y ver solo sus publicaciones ha quedado en segundo plano. En su lugar, los usuarios son inundados con contenido generado sin fin para que permanezcan en la plataforma el mayor tiempo posible y generen la mayor cantidad de dinero posible. La privacidad no importa: cada publicación y comentario es analizado, así como cada interacción del usuario con la app. El consumo es el foco, no mantenerse al día con los amigos. Las redes \"sociales\" se convirtieron solo en medios.",
-            visionText2: "Queremos recuperar las redes sociales originales: una plataforma solo para conectar y mantenerse al día con tus amigos, sin el peligro de ser abrumado por noticias aleatorias o caer en el doomscrolling y el brainrot con un solo deslizamiento. Una plataforma donde también puedas desconectar sin perderte nada importante. La privacidad juega el papel más importante. No analizamos publicaciones, comentarios ni el comportamiento de uso dentro de la app. Queremos lograrlo sin inversores, porque las grandes ganancias no son la prioridad, y así cada decisión siempre la tomamos nosotros.",
-            teamTitle1: "El",
-            teamTitle2: "Equipo",
-            founderName: "Benedict Kunzmann",
-            founderRole: "Fundador",
-            founderBio1: "¡Hola! Soy Bene, tengo 26 años y actualmente vivo en Leipzig. Empecé a programar Frapic porque estaba harto de todas las plataformas de redes sociales que solo están diseñadas para el lucro y los clics. Una plataforma donde simplemente puedas compartir tus recuerdos sin caer en el doomscrolling y sin que vendan todos tus datos. Simplemente redes sociales clásicas.",
-            founderBio2: "El equipo actualmente está formado por dos personas: yo me encargo de toda la programación de la app y todo lo que pasa entre bastidores, y una diseñadora que se encarga del diseño de la app y la web.",
-        },
-        formatsSection: {
-            title1: "Todos los formatos,",
-            title2: "que necesitas.",
-            subtitle: "Un momento, tres formas de compartirlo — desde el Frapic de doble cámara hasta historias efímeras y recuerdos que duran para siempre.",
-            storyName: "Historia",
-            storyDesc: "Comparte momentos en foto o video que desaparecen después de 24 horas.",
-            frapicName: "Frapic",
-            frapicDesc: "Un momento desde ambas perspectivas — cámara frontal y trasera en una sola toma. Visible en tu historia durante 24 horas.",
-            postName: "Publicación",
-            postDesc: "Para recuerdos atemporales que quieres conservar en tu perfil para siempre.",
-        },
-        footer: {
-            description: "La app gratuita de redes sociales hecha exclusivamente para tus amigos cercanos. Comparte fotos, historias y diarios — privado por defecto, sin algoritmo, sin venta de datos.",
-            productTitle: "Producto",
-            download: "Descargar",
-            features: "Funcionalidades",
-            companyTitle: "Empresa",
-            aboutUs: "Sobre nosotros",
-            contact: "Contacto",
-            privacyPolicy: "Política de privacidad",
-            termsOfService: "Términos de servicio",
-            copyright: "Frapic App Inc. Todos los derechos reservados.",
-        },
-        instagramImportPage: {
-            title: "Importar Instagram",
-            subtitle: "Lleva tus recuerdos de Instagram a Frapic en unos pocos pasos.",
-            whyTitle: "Por qué lo ofrecemos",
-            whyItems: [
-                "No queremos que empieces desde cero. Conserva todos tus recuerdos y compártelos en una plataforma mejor protegida.",
-                "Tus recuerdos quedan en un solo lugar, aunque primero los hayas compartido en Instagram.",
-                "Los archivos importados son privados por defecto en Frapic. Solo tú los ves hasta publicarlos.",
-                "Tu archivo se procesa en tu dispositivo y luego se sube de forma segura.",
-                "Importar no elimina nada de tu cuenta de Instagram.",
-            ],
-            stepsTitle: "Tutorial corto",
-            steps: [
-                {
-                    title: "1. Abre los ajustes de Instagram",
-                    description: "Ve a tu perfil, abre el menú y entra en el Centro de cuentas.",
-                },
-                {
-                    title: "2. Solicita la exportación",
-                    description: "Abre 'Tu información y permisos' y elige 'Descargar tu información'.",
-                },
-                {
-                    title: "3. Inicia la exportación al dispositivo",
-                    description: "Crea la exportación, selecciona rango de fechas y calidad, y luego iníciala.",
-                },
-                {
-                    title: "4. Importa el ZIP en Frapic",
-                    description: "Cuando recibas el enlace por correo, descarga el ZIP y súbelo en la pantalla de importación de Frapic.",
-                },
-            ],
-            noteTitle: "Importante",
-            noteText: "El enlace de descarga suele llegar en pocos minutos, pero puede tardar más en cuentas grandes.",
-            waitTitle: "Disponibilidad de la importación",
-            waitText: "La función de importación de Instagram estará disponible dos semanas después de crear tu cuenta. Esto nos ayuda a gestionar los costes del servidor y garantizar una experiencia fluida para todos.",
-        },
-        deleteAccountPage: {
-            title: "Eliminar cuenta",
-            subtitle: "Puedes eliminar permanentemente tu cuenta de Frapic y todos los datos asociados directamente desde la app.",
-            stepsTitle: "Cómo eliminar tu cuenta",
-            steps: [
-                {
-                    title: "1. Abre tu perfil",
-                    description: "Toca el icono de perfil en la barra de navegación inferior para abrir tu página de perfil.",
-                },
-                {
-                    title: "2. Abre ajustes",
-                    description: "Toca el icono de ajustes en la esquina superior derecha de tu página de perfil.",
-                },
-                {
-                    title: "3. Desplázate hasta 'Eliminar cuenta'",
-                    description: "Desplázate hacia abajo en la página de ajustes hasta que veas la opción 'Eliminar cuenta'.",
-                },
-                {
-                    title: "4. Confirma la eliminación",
-                    description: "Toca 'Eliminar cuenta' y confirma en el cuadro de diálogo que aparece. Tu cuenta se eliminará de forma permanente.",
-                },
-            ],
-            dataTitle: "Qué datos se eliminan",
-            dataItems: [
-                "Tu información de perfil (nombre, nombre de usuario, foto de perfil, biografía)",
-                "Todas tus publicaciones, historias y Frapics",
-                "Todas tus entradas de diario y medios del diario",
-                "Todos tus comentarios y reacciones",
-                "Todas tus amistades y solicitudes de amistad",
-                "Tus credenciales de cuenta e información de inicio de sesión",
-            ],
-            warningTitle: "Importante",
-            warningText: "La eliminación de cuenta es permanente e irreversible. Una vez eliminada, tu cuenta y todos los datos asociados no pueden recuperarse. No hay periodo de retención: todos los datos se eliminan de forma inmediata al borrar la cuenta.",
-        },
+    hero: {
+      title1: "Social Media",
+      title2: "how it should be",
+      subtitle:
+        "Frapic is the free social media app built exclusively for your close friends. Share memories as photos, stories & journals — private by default, no algorithm, no strangers.",
     },
+    story: {
+      headline:
+        "We want you to share more again. Be it the moments of everyday life...",
+      subtitleBefore: "Your stories are visible to your friends for ",
+      subtitleHighlight: "24 hours",
+      subtitleAfter: " and disappear automatically afterwards.",
+    },
+    feed: {
+      headline: "Or the special ones, forever.",
+      subtitleBefore: "Your posts stay visible in your feed ",
+      subtitleHighlight: "forever",
+      subtitleAfter: " — ready to look back on anytime.",
+    },
+    memory: {
+      headline: "Never forget when you experienced what",
+      subtitleBefore:
+        "You'll always find all your photos neatly organized in your ",
+      subtitleHighlight: "calendar",
+      subtitleAfter: ".",
+    },
+    info: {
+      heading: "Why Frapic is different",
+      cards: [
+        {
+          title: "No algorithms",
+          desc: "Your feed shows exactly how your friends shared their moments. No algorithm decides what you see or in what order.",
+        },
+        {
+          title: "Your data belongs to you",
+          desc: "We don't sell your data or posts, and we don't apply any algorithms, AI or upload filters to your content. Only you and your friends can see your data, nobody else.",
+        },
+        {
+          title: "Made in Europe",
+          desc: "We're a small team from Germany owned by nobody. We have no investors or advertisers. We're funded by our users, which means our only goal is building a product you love. Every decision is made by us, not investors. Built and hosted entirely within the EU, Germany.",
+        },
+      ],
+    },
+    formats: {
+      title: "All formats you need",
+      slides: [
+        {
+          name: "Frapic",
+          description:
+            "Capture your story from front and back. Customize the overlaying image as you want. Visible in feed for 24 hours.",
+        },
+        {
+          name: "Story",
+          description:
+            "Share stories in photo or video format that disappear after 24 hours.",
+        },
+        {
+          name: "Post",
+          description:
+            "For timeless memories you want to keep on your profile forever.",
+        },
+      ],
+    },
+    journals: {
+      title: "Journals",
+      description:
+        "Every day, all of your posts are bundled together into a journal. See all of your memories on a single page. Combine multiple journals into one to have all your memories in one place. You can always add your stories too.",
+    },
+    values: [
+      {
+        id: "privacy",
+        title: "Privacy",
+        desc: "Your data is yours. We don't sell your data and posts nor do we apply any algorithms, AI or upload filters to your content. Only you and your friends can see your data, nobody else.",
+      },
+      {
+        id: "independent",
+        title: "Independent",
+        desc: "We are a small team from Germany owned by nobody. We don't have any investors or advertisers. We are funded by our users, which means our only incentive is to build a product you love. All decisions are made by us, not investors.",
+      },
+      {
+        id: "european",
+        title: "European Solution",
+        desc: "Built and hosted fully within the EU, Germany. We comply with the strictest data protection laws in the world by default, not as an afterthought.",
+      },
+    ],
+    manifesto: {
+      tag: "The Frapic Difference",
+      headline1: "Social media,",
+      headline2: "redefined for friends.",
+      description:
+        "Frapic is built from the ground up to be different. No feed designed to keep you scrolling. No strangers deciding what goes viral. No algorithm optimizing for engagement over real connection.",
+      noItems: [
+        "No algorithm",
+        "No endless feed",
+        "No public profiles",
+        "No data selling",
+        "No doomscrolling",
+        "No upload filters",
+      ],
+    },
+    claims: {
+      noAlgorithm: {
+        headline: "No algorithm. Just your friends.",
+      },
+      dataPrivacy: {
+        headline: "Your data is yours.",
+      },
+      realMoments: {
+        headline: "No audience. Just real friends.",
+        description:
+          "No public profile, no follower count, no likes to chase. Post what actually happened.",
+      },
+      indieEurope: {
+        headline: "Independent. Made in Europe.",
+        badge: "Made in EU",
+      },
+    },
+    download: {
+      tag: "Available Now",
+      title: "Get Frapic",
+      subtitle: "Free. Private. Available for iOS and Android.",
+      iosPrefix: "Download on the",
+      iosStore: "App Store",
+      androidPrefix: "Get it on",
+      androidStore: "Google Play",
+      comingSoon: "Download links coming soon",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      questions: [
+        {
+          q: "Why a new social media platform?",
+          a: "Social media has become solely about media. The social aspect has been lost, focusing only on clicks, likes, and followers. Algorithms are the main drivers of content and user experience, while the social and friendship aspect has been left behind.\n\nFrapic is a social media platform that puts the social aspect back into social media.\n\nWe believe in a social platform that only exists for friends—private by default, with every feature focused on data privacy, no algorithm, and no doom-scrolling. A platform where the sole focus is on your friends, not your likes and followers.",
+        },
+        {
+          q: "Who owns Frapic?",
+          a: "Frapic is exclusively owned by its founder (Benedict Kunzmann). There are no investors and no other owners.\n\nThis decision was made to ensure that the platform stays true to its values and mission—ensuring absolute data privacy forever. The goal is not to build a billion-dollar company, but to build a platform that values its users and their privacy.",
+        },
+        {
+          q: "Does Frapic impose any censorship?",
+          a: "Frapic is committed to protecting freedom of expression—but with that freedom comes responsibility.\n\nWe do not allow content that incites violence, hatred, pornographic content, racism, or discrimination, nor do we permit harassment or the spread of dangerous misinformation.",
+        },
+        {
+          q: "Does Frapic share the data with anybody?",
+          a: "No. We do not share any data with third parties. Your data belongs solely to you and your friends.",
+        },
+        {
+          q: "How does Frapic create the feed?",
+          a: "The feed is a chronological feed of your friends' posts. Posts appear exactly when they’re shared by the people you follow—no reshuffling, no manipulation.",
+        },
+        {
+          q: "Where does Frapic store my data?",
+          a: "Currently, Frapic' core servers are hosted in Frankfurt, Germany—chosen for its reputation for strict data protection and privacy standards. It’s a location that reflects our commitment to performance, reliability, and user rights.\n\nFor worldwide speed and availability, we also make use of global CDNs and edge locations to ensure content loads quickly wherever our users are.",
+        },
+        {
+          q: "Will there be ads?",
+          a: "Yes. Frapic will place advertisements in the feed and stories. These are personalized ads provided by Google. The data used for ads is solely gathered by Google, and we do not share any of your private data with ad providers.",
+        },
+        {
+          q: "Is Frapic free? How does it generate revenue?",
+          a: "Yes. Frapic is a free service. We generate revenue through advertisements. In the future, we may optionally add a subscription model to remove ads.",
+        },
+        {
+          q: "How secure is my data?",
+          a: "We take data security seriously. All your data is only visible to you and your accepted friends. Nobody else can see your data. We also encrypt all data at rest and in transit to prevent unauthorized access.",
+        },
+        {
+          q: "How can I delete my account?",
+          a: "You can delete your account at any time by going to the settings page and clicking the 'Delete Account' button. Your account and all associated data will be permanently and irreversibly removed.",
+        },
+      ],
+    },
+    about: {
+      heroTitle: "About Frapic",
+      heroSubtitle1:
+        "We are creating a social media platform for users, not for advertisers and investors.",
+      heroSubtitle2:
+        "A platform to never miss anything from your friends, without getting distracted.",
+      visionTitle: "Our Vision",
+      visionText1:
+        'Today, social media has lost its value as a social platform. Following your own friends and seeing only their posts has long faded into the background. Instead, users are flooded with endlessly generated content so they stay on the platform as long as possible and generate as much money as possible. Privacy plays no role—every post and comment is analyzed, as is every interaction the user has with the app. Consumption is the focus, not staying updated with friends. "Social" media became just media.',
+      visionText2:
+        "We want to bring back the original social media—a platform solely to connect and stay updated with your friends, without the danger of being overwhelmed by random news or falling into doomscrolling and brainrot with a single swipe. A platform where you can also switch off without missing anything important. Privacy plays the most important role here. We don't analyze posts, comments, or usage behavior within the app. We want to achieve this without investors, because big profits are not the priority here, and so every decision is always made by us alone.",
+      founderInitials: "BK",
+      founderName: "Benedict Kunzmann",
+      founderRole: "Founder",
+      founderBio1:
+        "Hey! I'm Bene, I'm 26 years old and currently living in Leipzig. I started building Frapic because I was fed up with all the social media platforms that are only designed for profit and clicks. A platform where you can simply share your memories without getting doomscrolled and having all your data sold. Just classic social media.",
+      founderBio2:
+        "The team currently consists of two people: I take care of all the programming of the app and everything that goes on behind the scenes, and a designer who handles the design of the app and website.",
+    },
+    formatsSection: {
+      title1: "All formats,",
+      title2: "you need.",
+      subtitle:
+        "One moment, two ways to share it — from the dual-camera Frapic to the memory that lasts forever.",
+      frapicName: "Frapic",
+      frapicDesc:
+        "One moment from both perspectives — front and back camera in one shot. Visible in your story for 24 hours.",
+      postName: "Post",
+      postDesc:
+        "For timeless memories you want to keep on your profile forever.",
+      cta: "Discover more",
+    },
+    footer: {
+      description:
+        "The free social media app built exclusively for close friends. Share photos, stories & journals — private by default, no algorithm, no data selling.",
+      productTitle: "Product",
+      download: "Download",
+      features: "Features",
+      companyTitle: "Company",
+      aboutUs: "About Us",
+      contact: "Contact",
+      privacyPolicy: "Privacy Policy",
+      termsOfService: "Terms of Service",
+      copyright: "Frapic. All rights reserved.",
+    },
+    instagramImportPage: {
+      title: "Import Instagram",
+      subtitle:
+        "Bring your existing Instagram memories into Frapic in a few quick steps.",
+      whyTitle: "Why We Offer This",
+      whyItems: [
+        "We don't want you to start from zero. Keep all your existing memories and share them on a more protected platform.",
+        "Your memories stay together in one place, even if they were first shared on Instagram.",
+        "Imported files are private by default in Frapic. Only you can see them until you publish them.",
+        "Your archive is processed on your device and then uploaded securely.",
+        "Importing does not delete anything from your Instagram account.",
+      ],
+      stepsTitle: "Short Tutorial",
+      steps: [
+        {
+          title: "1. Open Instagram settings",
+          description:
+            "Go to your profile, open the menu, and enter the Account Center.",
+        },
+        {
+          title: "2. Request your export",
+          description:
+            "Open 'Your information and permissions' and choose 'Download your information'.",
+        },
+        {
+          title: "3. Start export to device",
+          description:
+            "Create export, select date range and media quality, then start the export.",
+        },
+        {
+          title: "4. Import the ZIP in Frapic",
+          description:
+            "When Instagram emails your download link, save the ZIP and upload it in the Frapic import screen.",
+        },
+      ],
+      noteTitle: "Good to know",
+      noteText:
+        "Instagram usually sends the export link within a few minutes, but it can take longer for larger accounts.",
+      waitTitle: "Import Availability",
+      waitText:
+        "The Instagram import feature becomes available two weeks after you create your account. This helps us manage server costs and ensure a smooth experience for everyone.",
+    },
+    deleteAccountPage: {
+      title: "Delete Account",
+      subtitle:
+        "You can permanently delete your Frapic account and all associated data directly from within the app.",
+      stepsTitle: "How to Delete Your Account",
+      steps: [
+        {
+          title: "1. Open your Profile",
+          description:
+            "Tap the profile icon in the bottom navigation bar to open your profile page.",
+        },
+        {
+          title: "2. Open Settings",
+          description:
+            "Tap the settings icon in the top right corner of your profile page.",
+        },
+        {
+          title: "3. Scroll down to 'Delete Account'",
+          description:
+            "Scroll to the bottom of the settings page until you see the 'Delete Account' option.",
+        },
+        {
+          title: "4. Confirm deletion",
+          description:
+            "Tap 'Delete Account' and confirm in the dialog that appears. Your account will be permanently deleted.",
+        },
+      ],
+      dataTitle: "What Data Gets Deleted",
+      dataItems: [
+        "Your profile information (name, username, profile picture, bio)",
+        "All your posts, stories, and Frapics",
+        "All your journal entries and journal media",
+        "All your comments and reactions",
+        "All your friendships and friend requests",
+        "Your account credentials and login data",
+      ],
+      warningTitle: "Important",
+      warningText:
+        "Account deletion is permanent and irreversible. Once deleted, your account and all associated data cannot be recovered. There is no retention period — all data is removed immediately upon deletion.",
+    },
+    donate: {
+      heroTag: "Support Frapic",
+      headline1: "Keep Frapic",
+      headline2: "free & independent.",
+      subtitle:
+        "We are a tiny team building Frapic without any funding, investors or advertisers. Every donation helps us keep the servers running and the app free for everyone.",
+      storyTitle: "Why we're asking for your support",
+      storyText:
+        "Frapic is independent and owned by nobody. No investors, no data selling — we are funded by people like you. That means every decision we make is made for our users, not for shareholders.",
+      usageTitle: "Where your donation goes",
+      usageItems: [
+        {
+          desc: "That my team and I can afford living from it and keep working on Frapic full-time.",
+        },
+        {
+          desc: "Improving the app and adding new features to make Frapic even better.",
+        },
+        {
+          desc: "Building a company and increase the number of team members.",
+        },
+        {
+          desc: "Organizing more cool events and activities for our community.",
+        },
+      ],
+      amountTitle: "Choose your amount",
+      amountSubtitle: "Every contribution counts — no matter how small.",
+      coffee: "a coffee",
+      customLabel: "Or enter your own amount",
+      customPlaceholder: "Your amount",
+      minAmount: "Minimum donation is €3.00.",
+      paypalMissing: "PayPal is not configured yet. Please check back soon.",
+      donationError:
+        "Something went wrong with your donation. Please try again.",
+      secureNote:
+        "You'll complete your donation securely via PayPal. Your donation is one time and no hidden fees are charged.",
+      thankYouHeadline1: "Thank you",
+      thankYouHeadline2: "so much!",
+      thankYouText:
+        "Your support means the world to our tiny team. Donations like yours keep Frapic free, private and independent.",
+      thankYouAmount: "Your donation",
+      gifButton: "Show your thank-you GIF",
+      gifLoading: "Finding your one-of-a-kind GIF…",
+      gifNote:
+        "This GIF is one-of-a-kind — it was assigned exactly once, to you. Nobody else will ever get it.",
+      gifError:
+        "We couldn't fetch your GIF right now. Please try again in a moment.",
+      backHome: "Back to home",
+    },
+  },
+  de: {
+    navbar: {
+      about: "Über uns",
+      faq: "FAQ",
+      guidelines: "Richtlinien",
+      instagramImport: "Instagram importieren",
+      downloadApp: "App Herunterladen",
+      donate: "Unterstützen",
+    },
+    navItems: {
+      formats: "Formate",
+      journals: "Journals",
+      privacy: "Datenschutz",
+      independent: "Independent",
+      european: "Europäisch",
+    },
+    hero: {
+      title1: "Social Media",
+      title2: "wie es sein sollte",
+      subtitle:
+        "Frapic ist die kostenlose Social-Media-App nur für deine engsten Freunde. Teile Erinnerungen als Fotos, Stories & Journals – standardmäßig privat, kein Algorithmus, keine öffentlichen Profile.",
+    },
+    story: {
+      headline:
+        "Wir wollen, dass Ihr wieder mehr teilt. Sei es die Momente des Alltages...",
+      subtitleBefore: "Deine Stories sind ",
+      subtitleHighlight: "24 Stunden",
+      subtitleAfter:
+        " lang für deine Freunde sichtbar und verschwinden danach automatisch.",
+    },
+    feed: {
+      headline: "Oder die Besonderen für immer.",
+      subtitleBefore: "Deine Posts bleiben ",
+      subtitleHighlight: "für immer",
+      subtitleAfter: " in deinem Feed sichtbar – jederzeit zum Zurückblättern.",
+    },
+    memory: {
+      headline: "Vergesse nie wann du was erlebt hast",
+      subtitleBefore:
+        "Du findest alle deine Bilder jederzeit übersichtlich in deinem ",
+      subtitleHighlight: "Kalender",
+      subtitleAfter: " wieder.",
+    },
+    info: {
+      heading: "Warum Frapic anders ist",
+      cards: [
+        {
+          title: "Keine Algorithmen",
+          desc: "Dein Feed wird dir genau so angezeigt, wie deine Freund*innen die Momente geteilt haben. Es gibt keine Algorithmen, die bestimmen, was du siehst und in welcher Reihenfolge du es sehen sollst.",
+        },
+        {
+          title: "Deine Daten gehören dir",
+          desc: "Wir verkaufen deine Daten und Posts nicht und wenden keine Algorithmen, KI oder Upload-Filter auf deine Inhalte an. Nur du und deine Freunde können deine Daten sehen, sonst niemand.",
+        },
+        {
+          title: "Aus Europa",
+          desc: "Wir sind ein kleines Team aus Deutschland, das niemandem gehört. Wir haben keine Investoren oder Werbekunden. Wir werden von unseren Nutzern finanziert, was bedeutet, dass unser einziges Ziel darin besteht, ein Produkt zu bauen, das du liebst. Alle Entscheidungen werden von uns, nicht von Investoren, getroffen. Komplett in der EU, Deutschland entwickelt und gehostet.",
+        },
+      ],
+    },
+    formats: {
+      title: "Alle Formate, die du brauchst",
+      slides: [
+        {
+          name: "Frapic",
+          description:
+            "Erfasse deine Geschichte aus beiden Kamera-Perspektiven. Passe das überlagernde Bild nach deinen Wünschen an. Im Feed für 24 Stunden sichtbar.",
+        },
+        {
+          name: "Story",
+          description:
+            "Teile Geschichten im Foto- oder Videoformat, die nach 24 Stunden verschwinden.",
+        },
+        {
+          name: "Post",
+          description:
+            "Für zeitlose Erinnerungen, die du für immer auf deinem Profil behalten möchtest.",
+        },
+      ],
+    },
+    journals: {
+      title: "Journals",
+      description:
+        "An jedem Tag werden alle deine Posts in einem Journal gebündelt. Sieh dir alle deine Erinnerungen auf einer einzigen Seite an. Kombiniere mehrere Journals, um alle Erinnerungen an einem Ort zu haben. Deine Stories kannst du auch immer hinzufügen.",
+    },
+    values: [
+      {
+        id: "privacy",
+        title: "Datenschutz",
+        desc: "Deine Daten gehören dir. Wir verkaufen deine Daten und Posts nicht und wenden keine Algorithmen, KI oder Upload-Filter auf deine Inhalte an. Nur du und deine Freunde können deine Daten sehen, sonst niemand.",
+      },
+      {
+        id: "independent",
+        title: "Unabhängig",
+        desc: "Wir sind ein kleines Team aus Deutschland, das niemandem gehört. Wir haben keine Investoren oder Werbekunden. Wir werden von unseren Nutzern finanziert, was bedeutet, dass unser einziges Ziel darin besteht, ein Produkt zu bauen, das du liebst. Alle Entscheidungen werden von uns, nicht von Investoren, getroffen.",
+      },
+      {
+        id: "european",
+        title: "Europäische Lösung",
+        desc: "Komplett in der EU, Deutschland entwickelt und gehostet. Wir halten uns standardmäßig an die strengsten Datenschutzgesetze der Welt, nicht erst im Nachhinein.",
+      },
+    ],
+    manifesto: {
+      tag: "Der Frapic-Unterschied",
+      headline1: "Social Media,",
+      headline2: "neu gedacht für Freunde.",
+      description:
+        "Frapic wurde von Grund auf anders konzipiert. Kein Feed, der dich zum endlosen Scrollen verleitet. Kein Algorithmus, der Engagement über echte Verbindungen stellt.",
+      noItems: [
+        "Kein Algorithmus",
+        "Kein endloser Feed",
+        "Keine Öffentlichen Profile",
+        "Kein Datenverkauf",
+        "Kein Doomscrolling",
+        "Keine Upload-Filter",
+      ],
+    },
+    claims: {
+      noAlgorithm: {
+        headline: "Kein Algorithmus. Nur deine Freunde.",
+      },
+      dataPrivacy: {
+        headline: "Deine Daten gehören dir.",
+      },
+      realMoments: {
+        headline: "Kein Publikum. Nur echte Freunde.",
+        description:
+          "Kein öffentliches Profil, keine Follower-Zahl, keine Likes zum Hinterherjagen. Poste, was wirklich passiert ist.",
+      },
+      indieEurope: {
+        headline: "Unabhängig. Aus Europa.",
+        badge: "Made in EU",
+      },
+    },
+    download: {
+      tag: "Jetzt verfügbar",
+      title: "Frapic laden",
+      subtitle: "Kostenlos. Privat. Für iOS und Android.",
+      iosPrefix: "Laden im",
+      iosStore: "App Store",
+      androidPrefix: "Jetzt bei",
+      androidStore: "Google Play",
+      comingSoon: "Download-Links kommen bald",
+    },
+    faq: {
+      title: "Häufig gestellte Fragen",
+      questions: [
+        {
+          q: "Warum eine neue Social-Media-Plattform?",
+          a: "Social Media besteht fast nur noch aus 'Media'. Der soziale Aspekt ist verloren gegangen und der Fokus liegt nur noch auf Klicks, Likes und Followern. Algorithmen sind zum Haupttreiber für Inhalte geworden, während der soziale Aspekt und echte Freundschaften auf der Strecke blieben.\n\nFrapic ist eine Plattform, die das Soziale wieder in den Mittelpunkt von Social Media rückt.\n\nWir glauben an eine soziale Plattform, die nur für Freunde existiert – standardmäßig privat, mit absolutem Fokus auf Datenschutz, ohne Algorithmus und ohne Doom-Scrolling. Eine Plattform, deren einziger Fokus auf deinen Freunden liegt und nicht auf deinen Likes oder Followern.",
+        },
+        {
+          q: "Wem gehört Frapic?",
+          a: "Frapic gehört ausschließlich seinem Gründer (Benedict Kunzmann). Es gibt keine Investoren und keine anderen Eigentümer.\n\nDiese Entscheidung wurde getroffen, um sicherzustellen, dass die Plattform ihren Werten und ihrer Mission treu bleibt – und absolute Datensicherheit für immer garantiert. Das Ziel ist nicht, ein Milliardenunternehmen aufzubauen, sondern eine Plattform, die ihre Nutzer und deren Privatsphäre wertschätzt.",
+        },
+        {
+          q: "Gibt es bei Frapic Zensur?",
+          a: "Frapic bekennt sich zum Schutz der Meinungsfreiheit – doch mit dieser Freiheit geht Verantwortung einher.\n\nWir erlauben keine Inhalte, die zu Gewalt, Hass, rassistischer Diskriminierung oder pornografischen Inhalten anstiften, und wir dulden auch keine Belästigung oder die Verbreitung gefährlicher Fehlinformationen.",
+        },
+        {
+          q: "Teilt Frapic Daten mit Dritten?",
+          a: "Nein. Wir teilen keinerlei Daten mit Dritten. Deine Daten gehören ausschließlich dir und deinen Freunden.",
+        },
+        {
+          q: "Wie wird der Feed bei Frapic erstellt?",
+          a: "Der Feed ist ein rein chronologischer Feed der Beiträge deiner Freunde. Beiträge erscheinen genau in dem Moment, in dem sie von den Personen, denen du folgst, geteilt werden – keine Umordnung, keine Manipulation.",
+        },
+        {
+          q: "Wo speichert Frapic meine Daten?",
+          a: "Derzeit werden die Kernserver von Frapic in Frankfurt am Main, Deutschland, gehostet – ausgewählt wegen des strengen Datenschutzes und der hohen Privatsphärenstandards. Dieser Standort spiegelt unser Engagement für Leistung, Zuverlässigkeit und Nutzerrechte wider.\n\nFür weltweite Geschwindigkeit und Verfügbarkeit nutzen wir zudem globale CDNs und Edge-Standorte, um sicherzustellen, dass Inhalte überall auf der Welt schnell laden.",
+        },
+        {
+          q: "Wird es Werbung geben?",
+          a: "Ja. Frapic wird Werbung im Feed und in den Stories integrieren. Diese Werbeanzeigen werden über Google ausgespielt. Die für die Werbung genutzten Daten stammen ausschließlich von Google, und wir geben keinerlei private Daten an Werbeanbieter weiter.",
+        },
+        {
+          q: "Ist Frapic kostenlos? Wie generiert es Einnahmen?",
+          a: "Ja. Frapic ist ein kostenloser Dienst. Wir generieren Einnahmen durch Werbung. In der Zukunft werden wir möglicherweise ein optionales Abonnement-Modell einführen, mit dem die Werbung entfernt werden kann.",
+        },
+        {
+          q: "Wie sicher sind meine Daten?",
+          a: "Wir nehmen Datensicherheit sehr ernst. All deine Daten sind nur für dich und deine akzeptierten Freunde sichtbar. Niemand sonst kann deine Daten sehen. Außerdem verschlüsseln wir alle Daten sowohl im Ruhezustand als auch bei der Übertragung, um unbefugten Zugriff zu verhindern.",
+        },
+        {
+          q: "Wie kann ich mein Konto löschen?",
+          a: "Du kannst dein Konto jederzeit löschen, indem du in die Einstellungen gehst und auf den Button 'Konto löschen' klickst. Dein Konto und alle damit verbundenen Daten werden dadurch unwiderruflich und dauerhaft entfernt.",
+        },
+      ],
+    },
+    about: {
+      heroTitle: "Über Frapic",
+      heroSubtitle1:
+        "Wir kreieren eine Social Media Platform für User*innen und nicht für Werbetreibende und Investoren.",
+      heroSubtitle2:
+        "Eine Plattform, um nichts bei deinen Freund*innen zu verpassen, ohne abgelenkt zu werden.",
+      visionTitle: "Unsere Vision",
+      visionText1:
+        'Heutzutage hat Social Media ihren Wert als soziale Plattform verloren. Den eigenen Freund*innen zu folgen und nur deren Posts zu sehen ist schon längst im Hintergrund geraten. Stattdessen werden User*innen mit endlos viel generiertem Content geflutet, damit diese so lange wie möglich auf der Plattform bleiben und so viel Geld wie möglich generieren. Die Privatsphäre spielt dabei keine Rolle, jegliche Posts und Kommentare werden analysiert sowie jede Interaktion der Nutzer*innen mit der App. Konsum steht im Fokus, nicht das Updaten unter Freund*innen. "Social" Media wurde zu Media.',
+      visionText2:
+        "Wir wollen das ursprüngliche Social Media wieder zurückbringen – eine Plattform nur um sich mit seinen Freund*innen zu connecten und zu updaten, ohne die Gefahr, von News überwältigt zu werden oder durch einen Swipe dem Doomscrolling und Brainrot zu verfallen. Eine Plattform, um auch mal abschalten zu können, ohne etwas Wichtiges zu verpassen. Dabei spielt die Privatsphäre die wichtigste Rolle. Wir analysieren keine Posts, Kommentare oder das Nutzungsverhalten innerhalb der App. Das wollen wir ohne Investoren schaffen, weil große Gewinne hier nicht im Mittelpunkt stehen – so wird jede Entscheidung immer nur von uns getroffen.",
+      founderInitials: "BK",
+      founderName: "Benedict Kunzmann",
+      founderRole: "Gründer",
+      founderBio1:
+        "Hey! Ich bin Bene, bin 26 Jahre alt und lebe derzeit in Leipzig. Ich hab Frapic angefangen zu programmieren, weil ich keine Lust mehr auf die ganzen Social-Media Platformen hatte, die nur noch auf Profit und Clicks ausgelegt sind. Eine Platform wo man einfach seine Erinnerungen teilen kann, ohne das man direkt Doomscrolled und seine ganzen Daten verkauft. Halt so ein klassisches Social-Media.",
+      founderBio2:
+        "Das Team besteht zurzeit aus zwei Leuten: Ich kümmere mich um die ganze Programmierung der App und alles was im Hintergrund noch so abgeht und einer Designerin, die sich um das Design der App und Website kümmert.",
+    },
+    formatsSection: {
+      title1: "Alle Formate,",
+      title2: "die du brauchst.",
+      subtitle:
+        "Ein Moment, zwei Wege ihn zu teilen — vom Dual-Kamera-Frapic bis zur Erinnerung, die für immer bleibt.",
+      frapicName: "Frapic",
+      frapicDesc:
+        "Ein Moment aus beiden Perspektiven — Vorder- und Rückkamera in einer Aufnahme. 24 Stunden in der Story sichtbar.",
+      postName: "Post",
+      postDesc:
+        "Für zeitlose Erinnerungen, die du für immer auf deinem Profil behältst.",
+      cta: "Mehr entdecken",
+    },
+    footer: {
+      description:
+        "Die kostenlose Social-Media-App exklusiv für deine engsten Freunde. Teile Fotos, Stories & Journals — standardmäßig privat, kein Algorithmus, kein Datenverkauf.",
+      productTitle: "Produkt",
+      download: "Herunterladen",
+      features: "Funktionen",
+      companyTitle: "Unternehmen",
+      aboutUs: "Über uns",
+      contact: "Kontakt",
+      privacyPolicy: "Datenschutzerklärung",
+      termsOfService: "Nutzungsbedingungen",
+      copyright: "Frapic. Alle Rechte vorbehalten.",
+    },
+    instagramImportPage: {
+      title: "Instagram importieren",
+      subtitle:
+        "Hole deine bestehenden Instagram-Erinnerungen in wenigen Schritten zu Frapic.",
+      whyTitle: "Warum wir das anbieten",
+      whyItems: [
+        "Wir wollen nicht, dass du bei null startest. Nimm all deine bestehenden Erinnerungen mit und teile sie auf einer besser geschützten Plattform.",
+        "Deine Erinnerungen bleiben an einem Ort, auch wenn sie zuerst auf Instagram geteilt wurden.",
+        "Importierte Inhalte sind in Frapic standardmäßig privat. Nur du siehst sie, bis du sie veröffentlichst.",
+        "Dein Archiv wird auf deinem Gerät verarbeitet und anschließend sicher hochgeladen.",
+        "Durch den Import wird nichts bei Instagram gelöscht.",
+      ],
+      stepsTitle: "Kurzanleitung",
+      steps: [
+        {
+          title: "1. Instagram-Einstellungen öffnen",
+          description:
+            "Gehe auf dein Profil, öffne das Menü und dann die Kontoübersicht.",
+        },
+        {
+          title: "2. Export anfragen",
+          description:
+            "Öffne 'Deine Informationen und Berechtigungen' und wähle 'Datein exportieren'.",
+        },
+        {
+          title: "3. Export auf Gerät starten",
+          description:
+            "Erstelle den Export, wähle Zeitraum und Medienqualität und starte den Export.",
+        },
+        {
+          title: "4. ZIP in Frapic importieren",
+          description:
+            "Sobald du den Download-Link per E-Mail bekommst, lade die ZIP herunter und importiere sie im Frapic-Importscreen.",
+        },
+      ],
+      noteTitle: "Gut zu wissen",
+      noteText:
+        "Der Download-Link kommt oft nach wenigen Minuten, kann bei großen Konten aber länger dauern.",
+      waitTitle: "Verfügbarkeit des Imports",
+      waitText:
+        "Die Instagram-Import-Funktion wird zwei Wochen nach der Erstellung deines Kontos freigeschaltet. So können wir die Serverkosten im Griff behalten und ein reibungsloses Erlebnis für alle sicherstellen.",
+    },
+    deleteAccountPage: {
+      title: "Konto löschen",
+      subtitle:
+        "Du kannst dein Frapic-Konto und alle zugehörigen Daten dauerhaft direkt in der App löschen.",
+      stepsTitle: "So löschst du dein Konto",
+      steps: [
+        {
+          title: "1. Profil öffnen",
+          description:
+            "Tippe auf das Profil-Symbol in der unteren Navigationsleiste, um dein Profil zu öffnen.",
+        },
+        {
+          title: "2. Einstellungen öffnen",
+          description:
+            "Tippe auf das Einstellungs-Symbol oben rechts auf deiner Profilseite.",
+        },
+        {
+          title: "3. Zu 'Konto löschen' scrollen",
+          description:
+            "Scrolle auf der Einstellungsseite nach unten, bis du die Option 'Konto löschen' siehst.",
+        },
+        {
+          title: "4. Löschung bestätigen",
+          description:
+            "Tippe auf 'Konto löschen' und bestätige im erscheinenden Dialog. Dein Konto wird dauerhaft gelöscht.",
+        },
+      ],
+      dataTitle: "Welche Daten gelöscht werden",
+      dataItems: [
+        "Deine Profilinformationen (Name, Benutzername, Profilbild, Bio)",
+        "Alle deine Posts, Stories und Frapics",
+        "Alle deine Journal-Einträge und Journal-Medien",
+        "Alle deine Kommentare und Reaktionen",
+        "Alle deine Freundschaften und Freundschaftsanfragen",
+        "Deine Zugangsdaten und Login-Informationen",
+      ],
+      warningTitle: "Wichtiger Hinweis",
+      warningText:
+        "Die Kontolöschung ist dauerhaft und unwiderruflich. Nach der Löschung können dein Konto und alle zugehörigen Daten nicht wiederhergestellt werden. Es gibt keine Aufbewahrungsfrist – alle Daten werden sofort bei der Löschung entfernt.",
+    },
+    donate: {
+      heroTag: "Unterstütze Frapic",
+      headline1: "Halte Frapic",
+      headline2: "frei & unabhängig.",
+      subtitle:
+        "Wir sind ein winziges Team, das Frapic ohne Finanzierung, Investoren oder Werbekunden baut. Jede Spende hilft uns, die Server am Laufen zu halten und die App für alle kostenlos zu halten.",
+      storyTitle: "Warum wir um deine Unterstützung bitten",
+      storyText:
+        "Frapic ist unabhängig und gehört niemandem. Keine Investoren, kein Datenverkauf — wir werden von Menschen wie dir finanziert. Das bedeutet, dass jede Entscheidung für unsere Nutzer getroffen wird, nicht für Aktionäre.",
+      usageTitle: "Wohin deine Spende fließt",
+      usageItems: [
+        {
+          desc: "Damit mein Team und ich davon leben können und Vollzeit an Frapic arbeiten zu können.",
+        },
+        {
+          desc: "Die App verbessern und neue Funktionen hinzufügen, um Frapic noch besser zu machen.",
+        },
+        {
+          desc: "Ein Unternehmen aufbauen und die Anzahl der Teammitglieder erhöhen.",
+        },
+        {
+          desc: "Weitere coole Events und Aktionen für unsere Community zu organisieren.",
+        },
+      ],
+      amountTitle: "Wähle deinen Betrag",
+      amountSubtitle: "Jeder Beitrag zählt — egal wie klein.",
+      coffee: "ein Kaffee",
+      customLabel: "Oder gib deinen eigenen Betrag ein",
+      customPlaceholder: "Dein Betrag",
+      minAmount: "Die Mindestspende beträgt 3,00 €.",
+      paypalMissing:
+        "PayPal ist noch nicht eingerichtet. Schau bald wieder vorbei.",
+      donationError:
+        "Bei deiner Spende ist etwas schiefgelaufen. Bitte versuche es erneut.",
+      secureNote:
+        "Du schließt deine Spende sicher über PayPal ab. Deine Spende ist einmalig und es fallen keine versteckten Gebühren an.",
+      thankYouHeadline1: "Danke",
+      thankYouHeadline2: "von Herzen!",
+      thankYouText:
+        "Deine Unterstützung bedeutet unserem kleinen Team die Welt. Spenden wie deine halten Frapic frei, privat und unabhängig.",
+      thankYouAmount: "Deine Spende",
+      gifButton: "Zeig mir mein Dankeschön-GIF",
+      gifLoading: "Wir suchen dein einzigartiges GIF…",
+      gifNote:
+        "Dieses GIF ist ein Unikat — es wurde genau einmal vergeben, an dich. Niemand anderes wird es jemals bekommen.",
+      gifError:
+        "Wir konnten dein GIF gerade nicht laden. Bitte versuche es gleich noch einmal.",
+      backHome: "Zurück zur Startseite",
+    },
+  },
+  es: {
+    navbar: {
+      about: "Sobre nosotros",
+      faq: "Preguntas frecuentes",
+      guidelines: "Directrices",
+      instagramImport: "Importar Instagram",
+      downloadApp: "Descargar App",
+      donate: "Apóyanos",
+    },
+    navItems: {
+      formats: "Formatos",
+      journals: "Diarios",
+      privacy: "Privacidad",
+      independent: "Independiente",
+      european: "Europeo",
+    },
+    hero: {
+      title1: "Redes Sociales",
+      title2: "como deberían ser",
+      subtitle:
+        "Frapic es la app gratuita de redes sociales hecha exclusivamente para tus amigos cercanos. Comparte recuerdos como fotos, historias y diarios — privado por defecto, sin algoritmo, sin extraños.",
+    },
+    story: {
+      headline:
+        "Queremos que compartas más de nuevo. Ya sean los momentos del día a día...",
+      subtitleBefore: "Tus historias son visibles para tus amigos durante ",
+      subtitleHighlight: "24 horas",
+      subtitleAfter: " y luego desaparecen automáticamente.",
+    },
+    feed: {
+      headline: "O los especiales, para siempre.",
+      subtitleBefore: "Tus publicaciones permanecen visibles en tu feed ",
+      subtitleHighlight: "para siempre",
+      subtitleAfter: " — listas para revivirlas cuando quieras.",
+    },
+    memory: {
+      headline: "Nunca olvides cuándo viviste qué",
+      subtitleBefore: "Encuentra todas tus fotos organizadas en tu ",
+      subtitleHighlight: "calendario",
+      subtitleAfter: " en cualquier momento.",
+    },
+    info: {
+      heading: "Por qué Frapic es diferente",
+      cards: [
+        {
+          title: "Sin algoritmos",
+          desc: "Tu feed muestra exactamente cómo tus amigos compartieron sus momentos. Ningún algoritmo decide qué ves ni en qué orden.",
+        },
+        {
+          title: "Tus datos son tuyos",
+          desc: "No vendemos tus datos ni publicaciones, y no aplicamos algoritmos, IA ni filtros de carga a tu contenido. Solo tú y tus amigos pueden ver tus datos, nadie más.",
+        },
+        {
+          title: "Hecho en Europa",
+          desc: "Somos un pequeño equipo de Alemania que no pertenece a nadie. No tenemos inversores ni anunciantes. Nos financian nuestros usuarios, lo que significa que nuestro único objetivo es construir un producto que ames. Todas las decisiones las tomamos nosotros, no los inversores. Desarrollado y alojado íntegramente en la UE, Alemania.",
+        },
+      ],
+    },
+    formats: {
+      title: "Todos los formatos que necesitas",
+      slides: [
+        {
+          name: "Frapic",
+          description:
+            "Captura tu historia desde la cámara frontal y trasera. Personaliza la imagen superpuesta como quieras. Visible en el feed durante 24 horas.",
+        },
+        {
+          name: "Historia",
+          description:
+            "Comparte historias en formato foto o video que desaparecen después de 24 horas.",
+        },
+        {
+          name: "Publicación",
+          description:
+            "Para recuerdos atemporales que quieres conservar en tu perfil para siempre.",
+        },
+      ],
+    },
+    journals: {
+      title: "Journals",
+      description:
+        "Cada día, todas tus publicaciones se agrupan en un diario. Mira todos tus recuerdos en una sola página. Combina varios diarios para tener todos tus recuerdos en un solo lugar. También puedes añadir tus historias en cualquier momento.",
+    },
+    values: [
+      {
+        id: "privacy",
+        title: "Privacidad",
+        desc: "Tus datos son tuyos. No vendemos tus datos ni tus publicaciones, ni aplicamos algoritmos, IA o filtros de carga a tu contenido. Solo tú y tus amigos pueden ver tus datos, nadie más.",
+      },
+      {
+        id: "independent",
+        title: "Independiente",
+        desc: "Somos un pequeño equipo de Alemania que no pertenece a nadie. No tenemos inversores ni anunciantes. Nos financiamos con nuestros usuarios, lo que significa que nuestro único incentivo es construir un producto que ames. Todas las decisiones las tomamos nosotros, no los inversores.",
+      },
+      {
+        id: "european",
+        title: "Solución Europea",
+        desc: "Desarrollado y alojado completamente en la UE, Alemania. Cumplimos con las leyes de protección de datos más estrictas del mundo por defecto, no como una ocurrencia tardía.",
+      },
+    ],
+    manifesto: {
+      tag: "La diferencia Frapic",
+      headline1: "Redes sociales,",
+      headline2: "redefinidas para amigos.",
+      description:
+        "Frapic está construido desde cero para ser diferente. Sin feed diseñado para que sigas scrolleando. Sin extraños decidiendo qué se vuelve viral. Sin algoritmos que priorizan el engagement sobre la conexión real.",
+      noItems: [
+        "Sin algoritmo",
+        "Sin feed interminable",
+        "Sin perfiles públicos",
+        "Sin venta de datos",
+        "Sin doomscrolling",
+        "Sin filtros de subida",
+      ],
+    },
+    claims: {
+      noAlgorithm: {
+        headline: "Sin algoritmo. Solo tus amigos.",
+      },
+      dataPrivacy: {
+        headline: "Tus datos son tuyos.",
+      },
+      realMoments: {
+        headline: "Sin audiencia. Solo amigos de verdad.",
+        description:
+          "Sin perfil público, sin número de seguidores, sin likes que perseguir. Publica lo que realmente pasó.",
+      },
+      indieEurope: {
+        headline: "Independiente. Hecha en Europa.",
+        badge: "Made in EU",
+      },
+    },
+    download: {
+      tag: "Disponible ahora",
+      title: "Obtén Frapic",
+      subtitle: "Gratis. Privado. Disponible para iOS y Android.",
+      iosPrefix: "Descargar en",
+      iosStore: "App Store",
+      androidPrefix: "Disponible en",
+      androidStore: "Google Play",
+      comingSoon: "Links de descarga próximamente",
+    },
+    faq: {
+      title: "Preguntas Frecuentes",
+      questions: [
+        {
+          q: "¿Por qué una nueva red social?",
+          a: "Las redes sociales se han convertido únicamente en medios. El aspecto social se ha perdido y solo se enfocan en clics, 'me gusta' y seguidores. Los algoritmos son los principales impulsores del contenido y la experiencia del usuario, mientras que el aspecto social y de amistad ha quedado atrás.\n\nFrapic es una plataforma que devuelve el aspecto social a las redes sociales.\n\nCreemos en una plataforma social que solo existe para amigos, privada por defecto, con cada aspecto enfocado en la privacidad de los datos, sin algoritmos y sin 'doom-scrolling'. Una plataforma donde el único enfoque son tus amigos y no tus likes y seguidores.",
+        },
+        {
+          q: "¿A quién pertenece Frapic?",
+          a: "Frapic es propiedad exclusiva de su fundador (Benedict Kunzmann). No hay inversores ni otros propietarios.\n\nEsta decisión se tomó para garantizar que la plataforma se mantenga fiel a sus valores y a su misión, garantizando la privacidad absoluta de los datos para siempre. El objetivo no es crear una empresa multimillonaria, sino construir una plataforma que valore a sus usuarios y su privacidad.",
+        },
+        {
+          q: "¿Ejerce Frapic algún tipo de censura?",
+          a: "Frapic tiene el compromiso de proteger la libertad de expresión, pero con esa libertad viene la responsabilidad.\n\nNo permitimos contenidos que inciten a la violencia, el odio, contenido pornográfico, racismo o discriminación, ni permitimos el acoso o la difusión de información falsa.",
+        },
+        {
+          q: "¿Frapic comparte datos con terceros?",
+          a: "No. No compartimos ningún dato con terceros. Tus datos te pertenecen únicamente a ti y a tus amigos.",
+        },
+        {
+          q: "¿Cómo elabora el feed Frapic?",
+          a: "El feed de Frapic es puramente cronológico con las publicaciones de tus amigos. Las publicaciones aparecen exactamente en el orden en que las comparten las personas a las que sigues, sin reordenamientos ni manipulación.",
+        },
+        {
+          q: "¿Dónde almacena Frapic mis datos?",
+          a: "Actualmente, los servidores principales de Frapic se alojan en Fráncfort (Alemania), elegidos por su reputación en cuanto a las estrictas normas de protección de datos y privacidad. Es una ubicación que refleja nuestro compromiso con el rendimiento, la fiabilidad y los derechos de los usuarios.\n\nPara conseguir velocidad y disponibilidad en todo el mundo, también utilizamos CDNs globales y ubicaciones edge para garantizar que el contenido se cargue rápidamente en todas partes.",
+        },
+        {
+          q: "¿Habrá anuncios publicitarios?",
+          a: "Sí. Frapic incluirá anuncios en el feed y en las historias. Estos anuncios personalizados son proporcionados por Google. Los datos utilizados para los anuncios son recopilados únicamente por Google, nosotros no compartimos tus datos privados con anunciantes.",
+        },
+        {
+          q: "Frapic es gratuito? ¿Cómo genera ingresos?",
+          a: "Sí. Frapic es un servicio gratuito. Generamos ingresos a través de la publicidad. Opcionalmente añadiremos un modelo de suscripción en el futuro que eliminará los anuncios.",
+        },
+        {
+          q: "¿Qué tan seguros están mis datos?",
+          a: "Nos tomamos la seguridad de los datos muy en serio. Todos tus datos solo son visibles para ti y tus amigos aceptados. Nadie más puede ver tus datos. También encriptamos todos los datos, tanto en reposo como en tránsito, para evitar el acceso no autorizado.",
+        },
+        {
+          q: "¿Cómo puedo eliminar mi cuenta?",
+          a: "Puedes eliminar tu cuenta en cualquier momento accediendo a la página de ajustes y haciendo clic en el botón de eliminar cuenta. Tu cuenta y todos los datos asociados se eliminarán de forma permanente y sin posibilidad de recuperación.",
+        },
+      ],
+    },
+    about: {
+      heroTitle: "Sobre Frapic",
+      heroSubtitle1:
+        "Estamos creando una plataforma de redes sociales para los usuarios, no para anunciantes e inversores.",
+      heroSubtitle2:
+        "Una plataforma para no perderte nada de tus amigos, sin distracciones.",
+      visionTitle: "Nuestra Visión",
+      visionText1:
+        'Hoy en día, las redes sociales han perdido su valor como plataforma social. Seguir a tus propios amigos y ver solo sus publicaciones ha quedado en segundo plano. En su lugar, los usuarios son inundados con contenido generado sin fin para que permanezcan en la plataforma el mayor tiempo posible y generen la mayor cantidad de dinero posible. La privacidad no importa: cada publicación y comentario es analizado, así como cada interacción del usuario con la app. El consumo es el foco, no mantenerse al día con los amigos. Las redes "sociales" se convirtieron solo en medios.',
+      visionText2:
+        "Queremos recuperar las redes sociales originales: una plataforma solo para conectar y mantenerse al día con tus amigos, sin el peligro de ser abrumado por noticias aleatorias o caer en el doomscrolling y el brainrot con un solo deslizamiento. Una plataforma donde también puedas desconectar sin perderte nada importante. La privacidad juega el papel más importante. No analizamos publicaciones, comentarios ni el comportamiento de uso dentro de la app. Queremos lograrlo sin inversores, porque las grandes ganancias no son la prioridad, y así cada decisión siempre la tomamos nosotros.",
+      founderInitials: "BK",
+      founderName: "Benedict Kunzmann",
+      founderRole: "Fundador",
+      founderBio1:
+        "¡Hola! Soy Bene, tengo 26 años y actualmente vivo en Leipzig. Empecé a programar Frapic porque estaba harto de todas las plataformas de redes sociales que solo están diseñadas para el lucro y los clics. Una plataforma donde simplemente puedas compartir tus recuerdos sin caer en el doomscrolling y sin que vendan todos tus datos. Simplemente redes sociales clásicas.",
+      founderBio2:
+        "El equipo actualmente está formado por dos personas: yo me encargo de toda la programación de la app y todo lo que pasa entre bastidores, y una diseñadora que se encarga del diseño de la app y la web.",
+    },
+    formatsSection: {
+      title1: "Todos los formatos,",
+      title2: "que necesitas.",
+      subtitle:
+        "Un momento, dos formas de compartirlo — desde el Frapic de doble cámara hasta el recuerdo que dura para siempre.",
+      frapicName: "Frapic",
+      frapicDesc:
+        "Un momento desde ambas perspectivas — cámara frontal y trasera en una sola toma. Visible en tu historia durante 24 horas.",
+      postName: "Publicación",
+      postDesc:
+        "Para recuerdos atemporales que quieres conservar en tu perfil para siempre.",
+      cta: "Descubre más",
+    },
+    footer: {
+      description:
+        "La app gratuita de redes sociales hecha exclusivamente para tus amigos cercanos. Comparte fotos, historias y diarios — privado por defecto, sin algoritmo, sin venta de datos.",
+      productTitle: "Producto",
+      download: "Descargar",
+      features: "Funcionalidades",
+      companyTitle: "Empresa",
+      aboutUs: "Sobre nosotros",
+      contact: "Contacto",
+      privacyPolicy: "Política de privacidad",
+      termsOfService: "Términos de servicio",
+      copyright: "Frapic. Todos los derechos reservados.",
+    },
+    instagramImportPage: {
+      title: "Importar Instagram",
+      subtitle:
+        "Lleva tus recuerdos de Instagram a Frapic en unos pocos pasos.",
+      whyTitle: "Por qué lo ofrecemos",
+      whyItems: [
+        "No queremos que empieces desde cero. Conserva todos tus recuerdos y compártelos en una plataforma mejor protegida.",
+        "Tus recuerdos quedan en un solo lugar, aunque primero los hayas compartido en Instagram.",
+        "Los archivos importados son privados por defecto en Frapic. Solo tú los ves hasta publicarlos.",
+        "Tu archivo se procesa en tu dispositivo y luego se sube de forma segura.",
+        "Importar no elimina nada de tu cuenta de Instagram.",
+      ],
+      stepsTitle: "Tutorial corto",
+      steps: [
+        {
+          title: "1. Abre los ajustes de Instagram",
+          description:
+            "Ve a tu perfil, abre el menú y entra en el Centro de cuentas.",
+        },
+        {
+          title: "2. Solicita la exportación",
+          description:
+            "Abre 'Tu información y permisos' y elige 'Descargar tu información'.",
+        },
+        {
+          title: "3. Inicia la exportación al dispositivo",
+          description:
+            "Crea la exportación, selecciona rango de fechas y calidad, y luego iníciala.",
+        },
+        {
+          title: "4. Importa el ZIP en Frapic",
+          description:
+            "Cuando recibas el enlace por correo, descarga el ZIP y súbelo en la pantalla de importación de Frapic.",
+        },
+      ],
+      noteTitle: "Importante",
+      noteText:
+        "El enlace de descarga suele llegar en pocos minutos, pero puede tardar más en cuentas grandes.",
+      waitTitle: "Disponibilidad de la importación",
+      waitText:
+        "La función de importación de Instagram estará disponible dos semanas después de crear tu cuenta. Esto nos ayuda a gestionar los costes del servidor y garantizar una experiencia fluida para todos.",
+    },
+    deleteAccountPage: {
+      title: "Eliminar cuenta",
+      subtitle:
+        "Puedes eliminar permanentemente tu cuenta de Frapic y todos los datos asociados directamente desde la app.",
+      stepsTitle: "Cómo eliminar tu cuenta",
+      steps: [
+        {
+          title: "1. Abre tu perfil",
+          description:
+            "Toca el icono de perfil en la barra de navegación inferior para abrir tu página de perfil.",
+        },
+        {
+          title: "2. Abre ajustes",
+          description:
+            "Toca el icono de ajustes en la esquina superior derecha de tu página de perfil.",
+        },
+        {
+          title: "3. Desplázate hasta 'Eliminar cuenta'",
+          description:
+            "Desplázate hacia abajo en la página de ajustes hasta que veas la opción 'Eliminar cuenta'.",
+        },
+        {
+          title: "4. Confirma la eliminación",
+          description:
+            "Toca 'Eliminar cuenta' y confirma en el cuadro de diálogo que aparece. Tu cuenta se eliminará de forma permanente.",
+        },
+      ],
+      dataTitle: "Qué datos se eliminan",
+      dataItems: [
+        "Tu información de perfil (nombre, nombre de usuario, foto de perfil, biografía)",
+        "Todas tus publicaciones, historias y Frapics",
+        "Todas tus entradas de diario y medios del diario",
+        "Todos tus comentarios y reacciones",
+        "Todas tus amistades y solicitudes de amistad",
+        "Tus credenciales de cuenta e información de inicio de sesión",
+      ],
+      warningTitle: "Importante",
+      warningText:
+        "La eliminación de cuenta es permanente e irreversible. Una vez eliminada, tu cuenta y todos los datos asociados no pueden recuperarse. No hay periodo de retención: todos los datos se eliminan de forma inmediata al borrar la cuenta.",
+    },
+    donate: {
+      heroTag: "Apoya a Frapic",
+      headline1: "Mantén Frapic",
+      headline2: "libre e independiente.",
+      subtitle:
+        "Somos un equipo diminuto que construye Frapic sin financiación, inversores ni anunciantes. Cada donación nos ayuda a mantener los servidores en marcha y la app gratuita para todos.",
+      storyTitle: "Por qué pedimos tu apoyo",
+      storyText:
+        "Frapic es independiente y no pertenece a nadie. Sin inversores, sin venta de datos — nos financian personas como tú. Eso significa que cada decisión la tomamos para nuestros usuarios, no para accionistas.",
+      usageTitle: "A dónde va tu donación",
+      usageItems: [
+        {
+          desc: "Para que mi equipo y yo podamos vivir de ello y seguir trabajando a tiempo completo en Frapic.",
+        },
+        {
+          desc: "Mejorar la app y añadir nuevas funciones para hacer Frapic aún mejor.",
+        },
+        {
+          desc: "Construir un negocio y aumentar el número de miembros del equipo.",
+        },
+        {
+          desc: "Organizar más eventos y actividades geniales para nuestra comunidad.",
+        },
+      ],
+      amountTitle: "Elige tu cantidad",
+      amountSubtitle: "Cada aportación cuenta — por pequeña que sea.",
+      coffee: "un café",
+      customLabel: "O introduce tu propia cantidad",
+      customPlaceholder: "Tu cantidad",
+      minAmount: "La donación mínima es de 3,00 €.",
+      paypalMissing: "PayPal aún no está configurado. Vuelve pronto.",
+      donationError: "Algo salió mal con tu donación. Inténtalo de nuevo.",
+      secureNote:
+        "Completarás tu donación de forma segura a través de PayPal. Tu donación es única y no hay cargos ocultos.",
+      thankYouHeadline1: "¡Mil",
+      thankYouHeadline2: "gracias!",
+      thankYouText:
+        "Tu apoyo significa el mundo para nuestro pequeño equipo. Donaciones como la tuya mantienen Frapic libre, privado e independiente.",
+      thankYouAmount: "Tu donación",
+      gifButton: "Enséñame mi GIF de agradecimiento",
+      gifLoading: "Buscando tu GIF único…",
+      gifNote:
+        "Este GIF es único — se asignó exactamente una vez, a ti. Nadie más lo recibirá jamás.",
+      gifError:
+        "No pudimos cargar tu GIF ahora mismo. Inténtalo de nuevo en un momento.",
+      backHome: "Volver al inicio",
+    },
+  },
 };
 
-export type Language = 'en' | 'de' | 'es';
+export type Language = "en" | "de" | "es";
 export type Translation = typeof translations.en;

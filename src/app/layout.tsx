@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Anton } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
-const anton = Anton({
-  weight: "400",
-  variable: "--font-anton",
+const plusJakarta = Plus_Jakarta_Sans({
+  weight: ["500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anton.variable} ${anton.className} antialiased bg-[#0A0A0A] text-white`}
+        className={`${plusJakarta.className} antialiased bg-white text-[#16110e]`}
       >
         <LanguageProvider>
           <Navbar />

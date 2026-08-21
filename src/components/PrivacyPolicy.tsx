@@ -1,5 +1,5 @@
-import { Open_Sans } from 'next/font/google';
-import React from 'react';
+import { Open_Sans } from "next/font/google";
+import React from "react";
 
 const privacyPolicyText = `Last updated March 23, 2026
 
@@ -242,7 +242,7 @@ To request to review, update, or delete your personal information, please fill o
 const openSans = Open_Sans({ weight: ["500"], subsets: ["latin"] });
 
 export default function PrivacyPolicy() {
-  const lines = privacyPolicyText.split('\n');
+  const lines = privacyPolicyText.split("\n");
   const content: React.ReactNode[] = [];
   let currentListItems: string[] = [];
   let key = 0;
@@ -254,13 +254,15 @@ export default function PrivacyPolicy() {
         {currentListItems.map((item) => (
           <li key={`item-${key++}`}>{item}</li>
         ))}
-      </ul>
+      </ul>,
     );
     currentListItems = [];
   };
 
   const isSectionHeading = (line: string) =>
-    /^\d+\.\s/.test(line) || line === 'SUMMARY OF KEY POINTS' || line === 'TABLE OF CONTENTS';
+    /^\d+\.\s/.test(line) ||
+    line === "SUMMARY OF KEY POINTS" ||
+    line === "TABLE OF CONTENTS";
 
   for (const rawLine of lines) {
     const line = rawLine.trim();
@@ -270,7 +272,7 @@ export default function PrivacyPolicy() {
       continue;
     }
 
-    if (line.startsWith('- ')) {
+    if (line.startsWith("- ")) {
       currentListItems.push(line.slice(2));
       continue;
     }
@@ -281,16 +283,16 @@ export default function PrivacyPolicy() {
       content.push(
         <h3 key={`h3-${key++}`} className="text-lg mt-6">
           {line}
-        </h3>
+        </h3>,
       );
       continue;
     }
 
-    if (line.startsWith('Last updated')) {
+    if (line.startsWith("Last updated")) {
       content.push(
         <p key={`updated-${key++}`} className="italic">
           {line}
-        </p>
+        </p>,
       );
       continue;
     }
@@ -298,15 +300,15 @@ export default function PrivacyPolicy() {
     content.push(
       <p key={`p-${key++}`} className="leading-7">
         {line}
-      </p>
+      </p>,
     );
   }
 
   flushList();
 
   return (
-    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-gray-300">
-      <h2 className="text-2xl  text-white">PRIVACY POLICY</h2>
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-black">
+      <h2 className="text-2xl  text-black">PRIVACY POLICY</h2>
       <div className={`space-y-3 ${openSans.className}`}>{content}</div>
     </section>
   );
