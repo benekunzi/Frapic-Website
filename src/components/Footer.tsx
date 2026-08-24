@@ -39,7 +39,7 @@ export default function Footer() {
                 {t.download.iosStore}
               </Link>
               <Link
-                href="/#download"
+                href="https://play.google.com/store/apps/details?id=com.Frapic.Frapic&pcampaignid=web_share"
                 className="rounded-2xl bg-[#16110e] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all hover:bg-black"
               >
                 {t.download.androidStore}
