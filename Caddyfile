@@ -1,0 +1,3 @@
+frapic.de, www.frapic.de {
+	reverse_proxy web:3000
+}

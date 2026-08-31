@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.github
+.impeccable
+gauntlet-loop
+termsOfCondition
+*.md
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
